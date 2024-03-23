@@ -1,0 +1,11 @@
+{
+
+    "Prizes": [
+      {
+        "id": 1,
+        "rewardType": 1,
+        "qtyReward": 20,
+        "itemID": 99
+       }
+    ]
+}

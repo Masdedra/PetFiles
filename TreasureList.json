@@ -1,0 +1,29 @@
+{
+
+    "Treasures": [
+      {
+        "id": 1,
+        "active": true,
+        "posX": -13.31678,
+        "posY": 0.5751953
+        },
+      {
+       "id": 2,
+        "active": true,
+        "posX": 40.6,
+        "posY": 13.8
+      },
+      {
+       "id": 3,
+        "active": true,
+        "posX": 91.5,
+        "posY": 22.3
+      },
+      {
+       "id": 4,
+        "active": true,
+        "posX": 55.1,
+        "posY": -25.7
+      }
+    ]
+}

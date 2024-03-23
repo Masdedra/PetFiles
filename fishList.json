@@ -1,0 +1,38 @@
+{
+
+    "dayFish": [
+      {
+        "id": 43,
+        "interval": "18-24",
+        "type": 3
+        },
+      {
+        "id": 44,
+        "interval": "18-24",
+        "type": 2
+      },
+      {
+        "id": 45,
+        "interval": "18-24",
+        "type": 1
+      }
+    ],
+    "dayNight": [
+      {
+        "id": 46,
+        "interval": "18-24",
+        "type": 3
+        },
+      {
+        "id": 47,
+        "interval": "18-24",
+        "type": 2
+      },
+      {
+        "id": 48,
+        "interval": "18-24",
+        "type": 1
+      }
+    ]
+  
+}
