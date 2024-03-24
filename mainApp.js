@@ -51,17 +51,6 @@ function sleep(ms) {
 	});
 }
 
-// const ProxyAgent = require('https-proxy-agent')
-const ProxyAgent = require('proxy-agent')
-const opts = {
-	transports: ['websocket'],
-	reconnect: true,
-	// secure: true,
-	// rejectUnauthorized:false,
-	// agent: new ProxyAgent('http://localhost:8888')
-	agent: new ProxyAgent('http://localhost:8888')
-}
-
 
 function getObjKey(obj, value) {
   return Object.keys(obj).find(key => obj[key] === value);
