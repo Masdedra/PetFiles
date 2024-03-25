@@ -109,12 +109,11 @@ const config = {
 };
 
 var db = mysql.createConnection({
-	host: config.host,
-	user: config.user,
-	password: config.password,
-	database: config.base,
-	socketPath: '/var/run/mysqld/mysqld.sock'
-});
+        host: '193.43.134.156',
+        user: 'Yair',
+        password: '',
+        database: 'temporalpet'
+       });
 
 db.connect(function (error) {
 	if (!!error)
