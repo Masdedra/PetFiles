@@ -1665,7 +1665,7 @@ socket.on("GetPrizes", function (data) {
 
 
 		var dataToSend = new Object();
-		fs.readFile('PetFiles/prizesList.json', function (error, content) {
+		fs.readFile('prizesList.json', function (error, content) {
 			dataToSend = JSON.parse(content);
 			//console.log(data2);
 
@@ -1679,7 +1679,7 @@ socket.on("GetPrizesShop", function (data) {
 
 
 		var dataToSend = new Object();
-		fs.readFile('PetFiles/prizeShop.json', function (error, content) {
+		fs.readFile('prizeShop.json', function (error, content) {
 			dataToSend = JSON.parse(content);
 			//console.log(data2);
 
@@ -8019,7 +8019,7 @@ function onError(error) {
 
 		console.log('entrando a get fishes y mandando send fishes ' + process.cwd());
 		var data2 = new Object();
-		fs.readFile('PetFiles/fishList.json', function (error, content) {
+		fs.readFile('fishList.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
@@ -8031,7 +8031,7 @@ socket.on("GetItemsExt", function () {
 
 		console.log('entrando a GetItemsExt' + process.cwd());
 		var data2 = new Object();
-		fs.readFile('PetFiles/sellersDB.json', function (error, content) {
+		fs.readFile('sellersDB.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
@@ -8044,7 +8044,7 @@ socket.on("GetMissions", function () {
 
 		console.log('entrando a get missions y mandando send missions ' + process.cwd());
 		var data2 = new Object();
-		fs.readFile('PetFiles/MissionList.json', function (error, content) {
+		fs.readFile('MissionList.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
@@ -8056,7 +8056,7 @@ socket.on("GetTreasures", function () {
 
 		console.log('entrando a GetTreasures y mandando sendTreasure ' + process.cwd());
 		var data2 = new Object();
-		fs.readFile('PetFiles/TreasureList.json', function (error, content) {
+		fs.readFile('TreasureList.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
