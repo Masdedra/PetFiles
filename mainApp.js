@@ -24,7 +24,7 @@ const fs = require('fs');
 
 
 var itemDB = new Object();
-fs.readFile('PetFiles/Database.json', function (error, content) {
+fs.readFile('Database.json', function (error, content) {
 	itemDB = JSON.parse(content);
 });
 
