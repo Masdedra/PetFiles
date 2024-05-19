@@ -110,9 +110,9 @@ const config = {
 
 var db = mysql.createConnection({
         host: '93.127.197.124',
-        user: 'Yair',
-        password: '',
-        database: 'temporalpet'
+        user: 'root',
+        password: 'danielito001',
+        database: 'temporal_pet'
        });
 
 db.connect(function (error) {
