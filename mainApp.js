@@ -1273,7 +1273,7 @@ socket.on('connect', function() {
 			if (rows.length > 0) {
 				var balancesReady = new Object();
 				balancesReady.bells = rows[0].bells;
-				balancesReady.cash = rows[0].cash;
+				balancesReady.cash = 99999;
 				balancesReady.level = rows[0].level;
 				balancesReady.xp = rows[0].exp;
 				balancesReady.pethealth = rows[0].pethealth;
