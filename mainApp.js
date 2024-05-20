@@ -19,6 +19,9 @@ const io = require('socket.io')(server, {
   reconnectionDelay: 1000,      // Retardo inicial de reconexión en milisegundos
   reconnectionDelayMax: 5000,   // Retardo máximo de reconexión en milisegundos
 });
+var redis = require('socket.io-redis');
+io.adapter(redis({ host: 'localhost', port: 6379 }));
+
 
 const fs = require('fs');
 
@@ -38,6 +41,36 @@ var  users = [];
 const expansionRoomLevel2 = 20;
 const expansionRoomLevel3 = 30;
 
+//PREMIOS DE GACHAPON POR RAREZA
+//GASHA DE COINS
+var  regularGashaPrizesBase1 = [3];
+var  regularGashaPrizesBase2 = [14];
+var  regularGashaPrizesBase3 = [15];
+var  regularGashaPrizesBase4 = [16];
+var  regularGashaPrizesBase5 = [42];
+var  regularGashaPrizeRare = 20;
+var  regularGashaPrice = 100; //Precio por tiro de un gashapon
+//Contadores requeridos para las rarezas de los premios
+var  regularCounterRequiredForBase1 = 10;
+var  regularCounterRequiredForBase2 = 25;
+var  regularCounterRequiredForBase3 = 35;
+var  regularCounterRequiredForBase4 = 45;
+var  regularCounterRequiredForBase5 = 50;
+//GASHA DE DINERO REAL PREMIUM COINS
+var  premiumGashaPrizesBase1 = [26];
+var  premiumGashaPrizesBase2 = [27];
+var  premiumGashaPrizesBase3 = [28];
+var  premiumGashaPrizesBase4 = [30];
+var  premiumGashaPrizesBase5 = [43];
+var  premiumGashaPrizeRare = 31;
+var premiumGashaPrice = 20; //Precio por tiro de un gashapon premium
+//Contadores requeridos para las rarezas de los premios
+var  premiumCounterRequiredForBase1 = 10;
+var  premiumCounterRequiredForBase2 = 25;
+var  premiumCounterRequiredForBase3 = 35;
+var  premiumCounterRequiredForBase4 = 45;
+var  premiumCounterRequiredForBase5 = 50;
+
 
 
 //Arreglo de mascotas Activas
@@ -50,6 +83,8 @@ function sleep(ms) {
 		setTimeout(resolve, ms);
 	});
 }
+
+
 
 
 function getObjKey(obj, value) {
@@ -101,19 +136,14 @@ function countProperties(obj) {
 	return count;
 }
 
-const config = {
-	"host": "localhost",
-	"user": "root",
-	"password": "danielito001",
-	"base": "temporal_pet"
-};
-
 var db = mysql.createConnection({
         host: '93.127.197.124',
         user: 'Admin',
         password: 'danielito001',
         database: 'temporal_pet'
        });
+
+
 
 db.connect(function (error) {
 	if (!!error)
@@ -129,7 +159,7 @@ function onConnect(socket) {
 
 
 server.listen(3000, () => {
-	console.log('listening on *:3000 prueba');
+	console.log('listening on *:3000');
 });
 
 io.on('connection', onConnect);
@@ -307,7 +337,12 @@ io.on('connection', (socket) => {
     	var level;
     	var points;
     	var ballGame;
+        var frisbeeGame;
+            var ropeGame;
         var favRoom;
+        var health;
+    	var hygiene;
+        var hunger;
 
     if(connectedUsers[socket.id] != null)
     {
@@ -386,7 +421,14 @@ io.on('connection', (socket) => {
     	 		level= connectedUsers[socket.id].level;
     	 		points= connectedUsers[socket.id].xp;
                 ballGame= connectedUsers[socket.id].ballGame;
+                frisbeeGame= connectedUsers[socket.id].frisbeeGame;
+                ropeGame= connectedUsers[socket.id].ropeGame;
                 favRoom= connectedUsers[socket.id].favRoom;
+            
+                health = connectedUsers[socket.id].pethealth;
+                hygiene = connectedUsers[socket.id].pethygiene;
+                hunger = connectedUsers[socket.id].pethunger;
+
 
 		
 		//Añadir en array temporal 								
@@ -529,7 +571,7 @@ io.on('connection', (socket) => {
     	db.query("UPDATE balances SET timeslogged = ?, harvests = ?, recyclepoints= ?, timeplayed = ?, giftsS = ?, giftsR = ?, visitsDone = ?, level = ?, exp = ? WHERE userid=? LIMIT 1", [timesLogged, harvests, recyclepoints, timeplayed, giftsS, giftsR, visitsDone, level, points, idToDisconnect], function (err4, rows4, fields4) {
 
 		});
-    	db.query("UPDATE balances SET level = ?, exp = ?, ballGame = ?, favRoom = ? WHERE userid=? LIMIT 1", [level, points, ballGame, favRoom, idToDisconnect], function (err4, rows4, fields4) {
+    	db.query("UPDATE balances SET level = ?, exp = ?, ballGame = ?, favRoom = ?, pethealth = ?, pethygiene = ?, pethunger = ?, frisbeeGame = ?, ropeGame = ? WHERE userid=? LIMIT 1", [level, points, ballGame, favRoom, health, hygiene, hunger, frisbeeGame, ropeGame, idToDisconnect], function (err4, rows4, fields4) {
 
         	console.log("Se actualizo en desconexion el nivel: " + level + " y experiencia " + points + " y ballGame: "+ ballGame+ " al usuario: " + idToDisconnect);
 		});
@@ -1168,6 +1210,32 @@ socket.on('connect', function() {
 	}); // TERMINA UPDATE CLOTHES
 
 
+//INICIA LOGIN
+	socket.on("updatePetCare", function (data) {
+		const hyg = data.hy;
+    	const hung = data.hu;
+    	const health = data.he; 
+    
+
+
+			// EL AMIGO ESTA CONECTADO EN EL ARREGLO DE USUARIOS ACTIVOS
+			if (connectedUsers[socket.id] != null) {
+				
+				
+					connectedUsers[socket.id].pethealth = health;
+					connectedUsers[socket.id].pethygiene = hyg;
+					connectedUsers[socket.id].pethunger = hung;
+
+				console.log("Se han actualizado los valores de cuidado de la mascota");
+
+			}
+
+
+
+
+	}); // TERMINA UPDATE CLOTHES
+
+
 	//SetDatesShop
 	socket.on("SetDatesShop", function (data) {
 
@@ -1218,7 +1286,10 @@ socket.on('connect', function() {
             	balancesReady.giftsSent = rows[0].giftsS;
             	balancesReady.giftsReceived = rows[0].giftsR;
             	balancesReady.visitsDone = rows[0].visitsDone;
-                        	balancesReady.ballGame = rows[0].ballGame;
+                balancesReady.ballGame = rows[0].ballGame;
+            balancesReady.frisbeeGame = rows[0].frisbeeGame;
+                        balancesReady.ropeGame = rows[0].ropeGame;
+
                         	balancesReady.favRoom = rows[0].favRoom;
             				balancesReady.prizeDay = rows[0].prizeDay;
             				balancesReady.prizeShopTime = rows[0].prizeShopTime;
@@ -1242,6 +1313,8 @@ socket.on('connect', function() {
             			connectedUsers[socket.id].giftsReceived = rows[0].giftsR;
             			connectedUsers[socket.id].visitsDone = rows[0].visitsDone;
             			connectedUsers[socket.id].ballGame = rows[0].ballGame;
+                        connectedUsers[socket.id].frisbeeGame = rows[0].frisbeeGame;
+                        connectedUsers[socket.id].ropeGame = rows[0].ropeGame;
             			connectedUsers[socket.id].favRoom = rows[0].favRoom;
                     	connectedUsers[socket.id].prizeShopTime = rows[0].prizeShopTime;
 
@@ -1280,6 +1353,8 @@ socket.on('connect', function() {
             		balancesReady.giftsReceived = 0;
             		balancesReady.visitsDone = 0;
             		balancesReady.ballGame = 0;
+                   balancesReady.frisbeeGame = 0;
+                   balancesReady.ropeGame = 0;
             		balancesReady.favRoom = 1;
 
 
@@ -1300,6 +1375,9 @@ socket.on('connect', function() {
             			connectedUsers[socket.id].giftsReceived = 0;
             			connectedUsers[socket.id].visitsDone = 0;
                         connectedUsers[socket.id].ballGame = 0;
+                        connectedUsers[socket.id].frisbeeGame = 0;
+                        connectedUsers[socket.id].ropeGame = 0;
+
                         connectedUsers[socket.id].favRoom = 1;
 
 						}
@@ -1569,6 +1647,285 @@ socket.on('connect', function() {
 	});
 
 
+
+	socket.on("getGashaPrize", function (data) {
+
+	var typeOfGasha = data;
+    
+    //Si el tipo de gasha entra en alguno de los tipos permitidos entonces procede a canjear un premio
+    if(typeOfGasha == "regular" || typeOfGasha == "premium")
+       {
+       	
+       	  if (connectedUsers[socket.id] != null) {
+          console.log("Comprando un gashapon al usuario: " + connectedUsers[socket.id].userID);
+			
+    		//Variables usadas para sustraer las monedas al usuario
+    		var costOfGasha = 0;
+    		var substractionCoin = false;
+    		var selectedPrize = 0;
+    
+    		//Seteando que tipo de moneda y cuanto le voy a restar al usuario al sacar un gashapon
+    		if(typeOfGasha == "regular")
+            {
+               costOfGasha = regularGashaPrice;
+			   substractionCoin = false;
+            }
+    		else if(typeOfGasha == "premium")
+            {
+                costOfGasha = premiumGashaPrice;
+			   substractionCoin = true;
+
+            }
+
+
+			// EL AMIGO ESTA CONECTADO EN EL ARREGLO DE USUARIOS ACTIVOS
+			if (connectedUsers[socket.id] != null) {
+
+					//Se resta en caso de ser de coin
+					if(substractionCoin == false)
+                    {
+                    	if(connectedUsers[socket.id].bells>=costOfGasha)
+                        {
+                           	connectedUsers[socket.id].bells = connectedUsers[socket.id].bells - costOfGasha;
+							
+                        	db.query("UPDATE balances SET bells = ? WHERE userid=? LIMIT 1", [connectedUsers[socket.id].bells.toFixed(0), connectedUsers[socket.id].userID], function (err4, rows4, fields4) {
+
+								console.log("Se actualizo el balance despues de comprar un gashapon");
+                            	
+                            	db.query("SELECT regularCounter FROM gashapon WHERE userid = ? LIMIT 1", [connectedUsers[socket.id].userID], function (err5, rows5, fields5) {
+
+									if (rows5.length > 0) 
+                                    {
+                                    	  const currentCounter = rows5[0].regularCounter;
+                                          console.log("El usuario tiene un contador de tiros de: " + currentCounter);
+                                    		
+                                    
+                                    		//PROCEDIMIENTO PARA ESCOGER UN PREMIO DEPENDIENDO DEL CONTADOR
+                                    		if(currentCounter == regularCounterRequiredForBase5)
+                                            {
+										       selectedPrize = regularGashaPrizeRare;
+
+                                            }
+                                    		else if(currentCounter > regularCounterRequiredForBase1 && currentCounter <= regularCounterRequiredForBase2)
+                                            {
+                                            	selectedPrize = regularGashaPrizesBase2[Math.floor(Math.random()*regularGashaPrizesBase2.length)];
+
+                                            }
+                                            else if(currentCounter > regularCounterRequiredForBase2 && currentCounter <= regularCounterRequiredForBase3)
+                                            {
+                                            	selectedPrize = regularGashaPrizesBase3[Math.floor(Math.random()*regularGashaPrizesBase3.length)];
+                                            }
+                                             else if(currentCounter > regularCounterRequiredForBase3 && currentCounter <= regularCounterRequiredForBase4)
+                                            {
+                                            	selectedPrize = regularGashaPrizesBase4[Math.floor(Math.random()*regularGashaPrizesBase4.length)];
+                                            }
+                                               else if(currentCounter > regularCounterRequiredForBase4 && currentCounter < regularCounterRequiredForBase5)
+                                            {
+                                            	selectedPrize = regularGashaPrizesBase5[Math.floor(Math.random()*regularGashaPrizesBase5.length)];
+                                            }
+                                             else if(currentCounter <= regularCounterRequiredForBase1)
+                                            {
+                                            	//Escoge un premio de rareza 1
+                                            	selectedPrize = regularGashaPrizesBase1[Math.floor(Math.random()*regularGashaPrizesBase1.length)];
+                                            }
+                                    
+                                            var gashaInfo = new Object();
+                            				gashaInfo.gashaPrize =selectedPrize;
+                            	    		gashaInfo.cr = connectedUsers[socket.id].bells.toFixed(0);
+                            	    		gashaInfo.rcr = connectedUsers[socket.id].cash.toFixed(0);
+
+                                    		db.query("UPDATE gashapon SET regularCounter = regularCounter+1 WHERE userid=? LIMIT 1", [connectedUsers[socket.id].userID], function (err8, rows8, fields8) 
+                                            {
+                                            		socket.emit("gashaponInformation",gashaInfo );
+
+                                            });
+                                    
+                                    
+                                    }
+                        			else
+                                    {
+                                    	  db.query("INSERT INTO gashapon(`userid`, `premiumCounter`, `regularCounter`) VALUES(?, ?, ?)", [connectedUsers[socket.id].userID, 0, 1], function (err3, rows, result3) {
+												
+                                            	console.log("Gashapon insertado nuevo usuario de gashapon, contador iniciado en 1");
+                                             const currentCounter = 1;
+
+                                    		//PROCEDIMIENTO PARA ESCOGER UN PREMIO DEPENDIENDO DEL CONTADOR
+                                    		if(currentCounter == regularCounterRequiredForBase5)
+                                            {
+										       selectedPrize = regularGashaPrizeRare;
+
+                                            }
+                                    		else if(currentCounter > regularCounterRequiredForBase1 && currentCounter <= regularCounterRequiredForBase2)
+                                            {
+                                            	selectedPrize = regularGashaPrizesBase2[Math.floor(Math.random()*regularGashaPrizesBase2.length)];
+
+                                            }
+                                            else if(currentCounter > regularCounterRequiredForBase2 && currentCounter <= regularCounterRequiredForBase3)
+                                            {
+                                            	selectedPrize = regularGashaPrizesBase3[Math.floor(Math.random()*regularGashaPrizesBase3.length)];
+                                            }
+                                             else if(currentCounter > regularCounterRequiredForBase3 && currentCounter <= regularCounterRequiredForBase4)
+                                            {
+                                            	selectedPrize = regularGashaPrizesBase4[Math.floor(Math.random()*regularGashaPrizesBase4.length)];
+                                            }
+                                              else if(currentCounter > regularCounterRequiredForBase4 && currentCounter < regularCounterRequiredForBase5)
+                                            {
+                                            	selectedPrize = regularGashaPrizesBase5[Math.floor(Math.random()*regularGashaPrizesBase5.length)];
+                                            }
+                                             else if(currentCounter <= regularCounterRequiredForBase1)
+                                            {
+                                            	//Escoge un premio de rareza 1
+                                            	selectedPrize = regularGashaPrizesBase1[Math.floor(Math.random()*regularGashaPrizesBase1.length)];
+                                            }
+                                    
+                                            var gashaInfo = new Object();
+                            				gashaInfo.gashaPrize =selectedPrize;
+                            	    		gashaInfo.cr = connectedUsers[socket.id].bells.toFixed(0);
+                            	    		gashaInfo.rcr = connectedUsers[socket.id].cash.toFixed(0);
+
+											socket.emit("gashaponInformation",gashaInfo );
+                                          });
+
+                                    }
+							});
+
+
+
+					});
+                        }
+                    	else
+                        {
+                        	socket.emit("errorBuyingGasha");
+                        }
+                    }
+
+            
+            					//Se resta en caso de ser de cash
+					if(substractionCoin == true)
+                    {
+                    	if(connectedUsers[socket.id].cash>=costOfGasha)
+                        {
+                           connectedUsers[socket.id].cash = connectedUsers[socket.id].cash - costOfGasha;
+						db.query("UPDATE balances SET cash = ? WHERE userid=? LIMIT 1", [connectedUsers[socket.id].cash.toFixed(0), data.userID], function (err4, rows4, fields4) {
+
+						console.log("Se actualizo el balance despues de comprar un gashapon");
+
+                            	db.query("SELECT premiumCounter FROM gashapon WHERE userid = ? LIMIT 1", [connectedUsers[socket.id].userID], function (err5, rows5, fields5) {
+
+									if (rows5.length > 0) 
+                                    {
+                                    	  const currentCounter = rows5[0].premiumCounter;
+                                          console.log("El usuario tiene un contador de tiros de: " + currentCounter);
+                                    		
+                                    
+                                    		//PROCEDIMIENTO PARA ESCOGER UN PREMIO DEPENDIENDO DEL CONTADOR
+                                    		if(currentCounter == premiumCounterRequiredForBase5)
+                                            {
+										       selectedPrize = premiumGashaPrizeRare;
+
+                                            }
+                                    		else if(currentCounter > premiumCounterRequiredForBase1 && currentCounter <= premiumCounterRequiredForBase2)
+                                            {
+                                            	selectedPrize = premiumGashaPrizesBase2[Math.floor(Math.random()*premiumGashaPrizesBase2.length)];
+
+                                            }
+                                            else if(currentCounter > premiumCounterRequiredForBase2 && currentCounter <= premiumCounterRequiredForBase3)
+                                            {
+                                            	selectedPrize = premiumGashaPrizesBase3[Math.floor(Math.random()*premiumGashaPrizesBase3.length)];
+                                            }
+                                             else if(currentCounter > premiumCounterRequiredForBase3 && currentCounter <= premiumCounterRequiredForBase4)
+                                            {
+                                            	selectedPrize = premiumGashaPrizesBase4[Math.floor(Math.random()*premiumGashaPrizesBase4.length)];
+                                            }
+                                             else if(currentCounter > premiumCounterRequiredForBase4 && currentCounter < premiumCounterRequiredForBase5)
+                                            {
+                                            	selectedPrize = premiumGashaPrizesBase5[Math.floor(Math.random()*premiumGashaPrizesBase5.length)];
+                                            }
+                                             else if(currentCounter <= premiumCounterRequiredForBase1)
+                                            {
+                                            	//Escoge un premio de rareza 1
+                                            	selectedPrize = premiumGashaPrizesBase1[Math.floor(Math.random()*premiumGashaPrizesBase1.length)];
+                                            }
+                                    
+                                            var gashaInfo = new Object();
+                            				gashaInfo.gashaPrize =selectedPrize;
+                            	    		gashaInfo.cr = connectedUsers[socket.id].bells.toFixed(0);
+                            	    		gashaInfo.rcr = connectedUsers[socket.id].cash.toFixed(0);
+                                    
+                                    		db.query("UPDATE gashapon SET premiumCounter = premiumCounter+1 WHERE userid=? LIMIT 1", [connectedUsers[socket.id].userID], function (err8, rows8, fields8) 
+                                            {
+                                            		socket.emit("gashaponInformation",gashaInfo );
+
+                                            });
+
+                                    
+                                    
+                                    }
+                        			else
+                                    {
+                                    	  db.query("INSERT INTO gashapon(`userid`, `premiumCounter`, `regularCounter`) VALUES(?, ?, ?)", [connectedUsers[socket.id].userID, 1, 0], function (err3, rows, result3) {
+												
+                                            	console.log("Gashapon insertado nuevo usuario de gashapon, contador iniciado en 1");
+                                                                                       const currentCounter = 1;
+
+                                    		//PROCEDIMIENTO PARA ESCOGER UN PREMIO DEPENDIENDO DEL CONTADOR
+                                    		if(currentCounter == premiumCounterRequiredForBase5)
+                                            {
+										       selectedPrize =premiumGashaPrizeRare;
+
+                                            }
+                                    		else if(currentCounter > premiumCounterRequiredForBase1 && currentCounter <= premiumCounterRequiredForBase2)
+                                            {
+                                            	selectedPrize = premiumGashaPrizesBase2[Math.floor(Math.random()*premiumGashaPrizesBase2.length)];
+
+                                            }
+                                            else if(currentCounter > premiumCounterRequiredForBase2 && currentCounter <= premiumCounterRequiredForBase3)
+                                            {
+                                            	selectedPrize = premiumGashaPrizesBase3[Math.floor(Math.random()*premiumGashaPrizesBase3.length)];
+                                            }
+                                             else if(currentCounter > premiumCounterRequiredForBase3 && currentCounter <= premiumCounterRequiredForBase4)
+                                            {
+                                            	selectedPrize = premiumGashaPrizesBase4[Math.floor(Math.random()*premiumGashaPrizesBase4.length)];
+                                            }
+                                             else if(currentCounter > premiumCounterRequiredForBase4 && currentCounter < premiumCounterRequiredForBase5)
+                                            {
+                                            	selectedPrize = premiumGashaPrizesBase5[Math.floor(Math.random()*premiumGashaPrizesBase5.length)];
+                                            }
+                                             else if(currentCounter <= premiumCounterRequiredForBase1)
+                                            {
+                                            	//Escoge un premio de rareza 1
+                                            	selectedPrize = premiumGashaPrizesBase1[Math.floor(Math.random()*premiumGashaPrizesBase1.length)];
+                                            }
+                                    
+                                            var gashaInfo = new Object();
+                            				gashaInfo.gashaPrize =selectedPrize;
+                            	    		gashaInfo.cr = connectedUsers[socket.id].bells.toFixed(0);
+                            	    		gashaInfo.rcr = connectedUsers[socket.id].cash.toFixed(0);
+
+											socket.emit("gashaponInformation",gashaInfo );
+                                          });
+
+                                    }
+									});
+
+					});
+                        }
+                    	else
+                        {
+                        	socket.emit("errorBuyingGasha");
+                        }
+                    }
+            
+			}
+
+       
+       }
+
+		
+	}
+    	});
+
+
 	socket.on("buyItem", function (data) {
 
 
@@ -1665,7 +2022,7 @@ socket.on("GetPrizes", function (data) {
 
 
 		var dataToSend = new Object();
-		fs.readFile('prizesList.json', function (error, content) {
+		fs.readFile('/root/prizesList.json', function (error, content) {
 			dataToSend = JSON.parse(content);
 			//console.log(data2);
 
@@ -1679,7 +2036,7 @@ socket.on("GetPrizesShop", function (data) {
 
 
 		var dataToSend = new Object();
-		fs.readFile('prizeShop.json', function (error, content) {
+		fs.readFile('/root/prizeShop.json', function (error, content) {
 			dataToSend = JSON.parse(content);
 			//console.log(data2);
 
@@ -1915,6 +2272,33 @@ socket.on("RevisarCompras", function (data) {
                                     }
 					});
     
+	});
+
+//ACTUALIZA EL CUSTOM BG
+	socket.on("upCustomBG", function (data) {
+
+    	const bgID = data;
+    			if (connectedUsers[socket.id] != null) 
+                {
+                	const uid = connectedUsers[socket.id].userID;
+                	if(uid != null)
+                    {
+                    		    	
+                                db.query("UPDATE pets SET customBG = ? WHERE userid = ? LIMIT 1", [bgID, uid], function (err3, rows3, fields3) 
+                                   {
+                                           		
+                                                console.log("CustomBG actualizado");                               
+												socket.emit("customBGUpdated");
+
+                                     });
+					}
+    
+                 }
+                
+                
+               
+    
+
 	});
 
 //OBTIENE EL ANIMAL DE COMPAÑIA
@@ -2579,6 +2963,53 @@ socket.on("RevisarCompras", function (data) {
 	});
 
 
+	socket.on("frisbeeGame", function (data) {
+
+		const qty = data;
+		console.log("Actualizando frisbee game");
+
+			// EL AMIGO ESTA CONECTADO EN EL ARREGLO DE USUARIOS ACTIVOS
+			if (connectedUsers[socket.id] != null) {
+
+            	//PRIMERO CHECO SI EL NIVEL Y EL XP SE HAN INICIALIZADO
+				if (connectedUsers[socket.id].frisbeeGame == null) {
+					console.log("NO SE PUDO ACTUALIZAR FRISBEE EN EL SERVIDOR, NO SE HA INICIALIZADO LA VARIABLE EN EL SERVIDOR");
+
+				}
+				else {
+
+                					connectedUsers[socket.id].frisbeeGame = qty; 
+                					console.log("Ahora el usuario tiene en frisbee game: " +connectedUsers[socket.id].frisbeeGame );
+				}
+
+			}
+	});
+
+	socket.on("ropeGame", function (data) {
+
+		const qty = data;
+		console.log("Actualizando rope game");
+
+			// EL AMIGO ESTA CONECTADO EN EL ARREGLO DE USUARIOS ACTIVOS
+			if (connectedUsers[socket.id] != null) {
+
+            	//PRIMERO CHECO SI EL NIVEL Y EL XP SE HAN INICIALIZADO
+				if (connectedUsers[socket.id].ropeGame == null) {
+					console.log("NO SE PUDO ACTUALIZAR FRISBEE EN EL SERVIDOR, NO SE HA INICIALIZADO LA VARIABLE EN EL SERVIDOR");
+
+				}
+				else {
+
+                					connectedUsers[socket.id].ropeGame = qty; 
+                					console.log("Ahora el usuario tiene en rope game: " +connectedUsers[socket.id].ropeGame );
+				}
+
+			}
+	});
+
+
+
+
 //ACTUALIZA EL XP Y EL NIVEL
 	socket.on("upFavRoom", function (data) {
 
@@ -2927,7 +3358,28 @@ socket.on("RevisarCompras", function (data) {
                                                         	dataToSend.lvl = rows6[0].level;
                                                             dataToSend.sid = datas.sid;
 
-                	  										socket.emit("friendJoinedMG", dataToSend);
+                	  										db.query("SELECT petlingid, contained FROM companionAnimals WHERE userid=? LIMIT 1", [data], function (err7, rows7, fields7) 
+                                             					{
+                                            						if (rows7.length > 0)
+                                                        			{
+                                                        				dataToSend.ptid = rows7[0].petlingid;
+                           			 									dataToSend.ptctd =rows7[0].contained; 
+
+                	  													socket.emit("friendJoinedMG", dataToSend);
+                                                        			}
+                                            						else
+                                                        			{
+                                                        				dataToSend.ptid = -1;
+                           			 									dataToSend.ptctd =""; 
+                     									
+
+                	  													socket.emit("friendJoinedMG", dataToSend);
+                                                        			}
+                                            
+
+                                            
+                                             					});
+
                                                         }
                                             			else
                                                         {
@@ -2944,7 +3396,28 @@ socket.on("RevisarCompras", function (data) {
                                                             dataToSend.lvl = 1;
                                                             dataToSend.sid = datas.sid;
 
-                	  										socket.emit("friendJoinedMG", dataToSend);
+                	  										db.query("SELECT petlingid, contained FROM companionAnimals WHERE userid=? LIMIT 1", [data], function (err7, rows7, fields7) 
+                                             					{
+                                            						if (rows7.length > 0)
+                                                        			{
+                                                        				dataToSend.ptid = rows7[0].petlingid;
+                           			 									dataToSend.ptctd =rows7[0].contained; 
+
+                	  													socket.emit("friendJoinedMG", dataToSend);
+                                                        			}
+                                            						else
+                                                        			{
+                                                        				dataToSend.ptid = -1;
+                           			 									dataToSend.ptctd =""; 
+                     									
+
+                	  													socket.emit("friendJoinedMG", dataToSend);
+                                                        			}
+                                            
+
+                                            
+                                             					});
+
                                                         }
                                             
 
@@ -3032,8 +3505,29 @@ socket.on("RevisarCompras", function (data) {
                                                         	dataToSend.y = datas.y;
                                                             dataToSend.lvl = rows6[0].level;
                                                             dataToSend.sid = datas.sid;
+                                                        
+                                                        		db.query("SELECT petlingid, contained FROM companionAnimals WHERE userid=? LIMIT 1", [data], function (err7, rows7, fields7) 
+                                             					{
+                                            						if (rows7.length > 0)
+                                                        			{
+                                                        				dataToSend.ptid = rows7[0].petlingid;
+                           			 									dataToSend.ptctd =rows7[0].contained; 
 
-                	  										socket.emit("friendJoinedMG", dataToSend);
+                	  													socket.emit("friendJoinedMG", dataToSend);
+                                                        			}
+                                            						else
+                                                        			{
+                                                        				dataToSend.ptid = -1;
+                           			 									dataToSend.ptctd =""; 
+                     									
+
+                	  													socket.emit("friendJoinedMG", dataToSend);
+                                                        			}
+                                            
+
+                                            
+                                             					});
+
                                                         }
                                             			else
                                                         {
@@ -3050,7 +3544,27 @@ socket.on("RevisarCompras", function (data) {
                                                             dataToSend.lvl = 1;
                                                             dataToSend.sid = datas.sid;
 
-                	  										socket.emit("friendJoinedMG", dataToSend);
+                                                        		db.query("SELECT petlingid, contained FROM companionAnimals WHERE userid=? LIMIT 1", [data], function (err7, rows7, fields7) 
+                                             					{
+                                            						if (rows7.length > 0)
+                                                        			{
+                                                        				dataToSend.ptid = rows7[0].petlingid;
+                           			 									dataToSend.ptctd =rows7[0].contained; 
+
+                	  													socket.emit("friendJoinedMG", dataToSend);
+                                                        			}
+                                            						else
+                                                        			{
+                                                        				dataToSend.ptid = -1;
+                           			 									dataToSend.ptctd =""; 
+                     									
+
+                	  													socket.emit("friendJoinedMG", dataToSend);
+                                                        			}
+                                            
+
+                                            
+                                             					});
                                                         }
                                             
 
@@ -3679,9 +4193,9 @@ socket.on("RevisarCompras", function (data) {
 //VERIFICA SI EL USUARIO A VISITAR ESTA CONECTADO O NO
 	socket.on("isFriendActive", function (data) {
     
-    var dataToSend = new Object();
-    var petInfoReady = new Object();
-    var petInfoReady2 = new Object();
+    	var dataToSend = new Object();
+    	var petInfoReady = new Object();
+    	var petInfoReady2 = new Object();
 
 
     		db.query("SELECT *  FROM petclothes WHERE userid=? LIMIT 1", [data], function (err2, rows2, fields2) {
@@ -3744,9 +4258,19 @@ socket.on("RevisarCompras", function (data) {
 								petInfoReady2.socket = "";
 								petInfoReady2.username = "";
 								petInfoReady2.phoneColor = rows3[0].phoneColor;
-			
-            
-                			            	db.query("SELECT * FROM balances WHERE userid=? LIMIT 1", [data], function (err6, rows6, fields6) 
+                
+					db.query("SELECT mountid FROM mounts WHERE userid=? LIMIT 1", [data], function (err77, rows77, fields77) 
+                      {
+                        	if(rows77.length >0)
+                            {
+                            	petInfoReady2.mount = 	rows77[0].mountid;
+                            }
+                    		else
+                            {
+                            	petInfoReady2.mount = -1;
+                            }
+                   		
+                    		db.query("SELECT * FROM balances WHERE userid=? LIMIT 1", [data], function (err6, rows6, fields6) 
                                              {
                                             			if (rows6.length > 0)
                                                         {
@@ -3771,6 +4295,11 @@ socket.on("RevisarCompras", function (data) {
 
                                             
                                              });
+                    
+                    	
+                      });
+            
+                			            	
 
 
 
@@ -3836,8 +4365,19 @@ socket.on("RevisarCompras", function (data) {
 								petInfoReady2.socket = "";
 								petInfoReady2.username = "";
 								petInfoReady2.phoneColor = rows3[0].phoneColor;
-			
-          			            	db.query("SELECT *  FROM balances WHERE userid=? LIMIT 1", [data], function (err6, rows6, fields6) 
+                
+                					db.query("SELECT mountid FROM mounts WHERE userid=? LIMIT 1", [data], function (err77, rows77, fields77) 
+                      				{
+                        					if(rows77.length >0)
+                            				{
+                            					petInfoReady2.mount = 	rows77[0].mountid;
+                            				}
+                    						else
+                            				{
+                            					petInfoReady2.mount = -1;
+                            				}
+                                    
+                                              db.query("SELECT *  FROM balances WHERE userid=? LIMIT 1", [data], function (err6, rows6, fields6) 
                                              {
                                             			if (rows6.length > 0)
                                                         {
@@ -3861,6 +4401,12 @@ socket.on("RevisarCompras", function (data) {
 
                                             
                                              });
+                                    
+                                    
+                                   });
+                   		
+			
+
 
                 
                 });
@@ -7123,6 +7669,7 @@ console.log("La password recibida es ", data.pass)
                             	petInfoReady.fbid = rows[0].fbid;
 								console.log("estoy enviando el ID amigo: " + petInfoReady.userid);
 								petInfoComplete.facials = petInfoReady;
+								petInfoComplete.customBgID = rows2[0].customBG;
 
 								db.query("SELECT *  FROM petclothes WHERE userid=? LIMIT 1", [idamigo], function (err3, rows3, fields3) {
 
@@ -7165,7 +7712,20 @@ console.log("La password recibida es ", data.pass)
                                                 	lvl = rows00[0].level;
                                                 }
                                         		petInfoComplete.level = lvl;
-                                        		socket.emit("petDataInfoAmigo", petInfoComplete);
+                                        			db.query("SELECT mountid  FROM mounts WHERE userid=? LIMIT 1", [idamigo], function (err01, rows01, fields01) 
+                                        			{
+                                                          var defaultMount = -1;
+                                        
+                                        				if(rows01.length>0)
+                                                		{
+                                                			defaultMount = rows01[0].mountid;
+                                                		}
+                                                         petInfoComplete.mount = defaultMount;
+
+                                                    	socket.emit("petDataInfoAmigo", petInfoComplete);
+
+                                                      });
+                                        		
 
                                         });
 
@@ -7200,6 +7760,7 @@ console.log("La password recibida es ", data.pass)
 
 
 										petInfoComplete.clothes = petInfoReady3;
+										petInfoComplete.customBgID = 0;
 
 										db.query("SELECT level  FROM balances WHERE userid=? LIMIT 1", [idamigo], function (err00, rows00, fields00) 
                                         {
@@ -7210,7 +7771,20 @@ console.log("La password recibida es ", data.pass)
                                                 	lvl = rows00[0].level;
                                                 }
                                         		petInfoComplete.level = lvl;
-                                        		socket.emit("petDataInfoAmigo", petInfoComplete);
+                                        			db.query("SELECT mountid  FROM mounts WHERE userid=? LIMIT 1", [idamigo], function (err01, rows01, fields01) 
+                                        			{
+                                                          var defaultMount = -1;
+                                        
+                                        				if(rows01.length>0)
+                                                		{
+                                                			defaultMount = rows01[0].mountid;
+                                                		}
+                                                         petInfoComplete.mount = defaultMount;
+
+                                                    	socket.emit("petDataInfoAmigo", petInfoComplete);
+
+                                                      });
+                                        		
 
                                         });
 									}
@@ -8019,7 +8593,7 @@ function onError(error) {
 
 		console.log('entrando a get fishes y mandando send fishes ' + process.cwd());
 		var data2 = new Object();
-		fs.readFile('fishList.json', function (error, content) {
+		fs.readFile('/root/fishList.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
@@ -8031,7 +8605,7 @@ socket.on("GetItemsExt", function () {
 
 		console.log('entrando a GetItemsExt' + process.cwd());
 		var data2 = new Object();
-		fs.readFile('sellersDB.json', function (error, content) {
+		fs.readFile('/root/sellersDB.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
@@ -8044,7 +8618,7 @@ socket.on("GetMissions", function () {
 
 		console.log('entrando a get missions y mandando send missions ' + process.cwd());
 		var data2 = new Object();
-		fs.readFile('MissionList.json', function (error, content) {
+		fs.readFile('/root/MissionList.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
@@ -8056,7 +8630,7 @@ socket.on("GetTreasures", function () {
 
 		console.log('entrando a GetTreasures y mandando sendTreasure ' + process.cwd());
 		var data2 = new Object();
-		fs.readFile('TreasureList.json', function (error, content) {
+		fs.readFile('/root/TreasureList.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
@@ -8269,7 +8843,7 @@ socket.on("GetTreasures", function () {
 	socket.on("GiveMeShopExample", function (data) {
 
 
-  		db.query("SELECT * FROM room1 WHERE userid=? LIMIT 1", 40, function (err, rows, fields) {
+  		db.query("SELECT * FROM room1 WHERE userid=? LIMIT 1", 29, function (err, rows, fields) {
 			console.log("Columnas encontradas de room: " + rows.length);
         
         var roomInfoReady = new Object();
@@ -8279,11 +8853,11 @@ socket.on("GetTreasures", function () {
         
         
         		roomInfoReady.room = JSON.stringify(obj);
-				roomInfoReady.wall = 76;
-				roomInfoReady.floor = 75;
-				roomInfoReady.name = "Furniture";
+				roomInfoReady.wall = 187;
+				roomInfoReady.floor = 188;
+				roomInfoReady.name = "Toys";
         		roomInfoReady.xlimmax= 27;
-                roomInfoReady.xlimmin= -27;
+                roomInfoReady.xlimmin= -59.64;
 
 						socket.emit("room300" , roomInfoReady);
 
@@ -10165,3 +10739,7 @@ socket.on("GiveMeVisitorRoom", function (data) {
 });
 
 });
+
+
+
+
