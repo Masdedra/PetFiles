@@ -154,7 +154,7 @@ db.connect(function (error) {
 
 
 function onConnect(socket) {
-	console.log('Connected');
+	console.log('Connected pruebin Yair');
 }
 
 
@@ -167,7 +167,7 @@ io.on('connection', onConnect);
 
 
 io.on('connection', (socket) => {
-	console.log('a user connected');
+	console.log('a user connected pruebon yair');
 	
 	socket.on("Reconectando", function (data) {
 		
