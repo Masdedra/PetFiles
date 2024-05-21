@@ -149,7 +149,7 @@ db.connect(function (error) {
 	if (!!error)
 		throw error;
 
-	console.log('mysql connected to ' + config.host + ", user " + config.user + ", database " + config.base);
+	//console.log('mysql connected to ' + config.host + ", user " + config.user + ", database " + config.base);
 });
 
 
