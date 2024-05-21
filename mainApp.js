@@ -159,7 +159,7 @@ function onConnect(socket) {
 
 
 server.listen(3000, () => {
-	console.log('listening on *:3000');
+	console.log('listening on *:3000 yairson');
 });
 
 io.on('connection', onConnect);
