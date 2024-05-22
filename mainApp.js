@@ -20,7 +20,7 @@ const io = require('socket.io')(server, {
   reconnectionDelayMax: 5000,   // Retardo máximo de reconexión en milisegundos
 });
 var redis = require('socket.io-redis');
-io.adapter(redis({ host: 'localhost', port: 6379 }));
+io.adapter(redis({ host: '93.127.197.124', port: 6379 }));
 
 
 const fs = require('fs');
