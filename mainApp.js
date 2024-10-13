@@ -37,7 +37,7 @@ const fs = require('fs');
 const maxFriends = 50;
 
 var itemDB = new Object();
-fs.readFile('/PetFiles/Database.json', function (error, content) {
+fs.readFile('/home/ec2-user/PetFiles/Database.json', function (error, content) {
 	itemDB = JSON.parse(content);
 });
 
