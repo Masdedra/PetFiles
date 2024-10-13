@@ -16,7 +16,7 @@ const io = new Server(server);
 const fs = require('fs');
 
 var itemDB = new Object();
-fs.readFile('/root/Database.json', function (error, content) {
+fs.readFile('/home/ec2-user/PetFiles/Database.json', function (error, content) {
 	itemDB = JSON.parse(content);
 });
 
@@ -93,11 +93,12 @@ function countProperties(obj) {
 }
 
 const config = {
-	"host": "localhost",
-	"user": "root",
+	"host": "93.127.197.124",
+	"user": "Admin",
 	"password": "danielito001",
 	"base": "temporal_pet"
 };
+
 
 var db = mysql.createConnection({
 	host: config.host,
