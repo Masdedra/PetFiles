@@ -179,8 +179,7 @@ var db = mysql.createConnection({
 	user: config.user,
 	password: config.password,
 	database: config.base,
-	charset: 'utf8mb4',
-	socketPath: '/var/run/mysqld/mysqld.sock'
+	charset: 'utf8mb4'
 });
 
 db.connect(function (error) {
