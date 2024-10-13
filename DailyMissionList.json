@@ -1,0 +1,76 @@
+{
+
+    "DailyMissions": [
+      {
+        "id": 1,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 101,
+        "text": "Pesca principiante",
+        "objective": 10,
+        "desc": "Pesca 10 peces",
+      	"subprize": 101
+        },
+      {
+        "id": 2,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 101,
+        "text": "Buena pesca",
+        "objective": 100,
+        "desc": "Pesca 100 peces",
+      	"subprize": 101
+      },
+      {
+        "id": 3,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 101,
+        "text": "Rompiendo cañas",
+        "objective": 500,
+        "desc": "Pesca 500 peces",
+      	"subprize": 101
+      },
+      {
+        "id": 4,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 101,
+        "text": "Maestro del anzuelo",
+        "objective": 2000,
+        "desc": "Pesca 2000 peces",
+      	"subprize": 101
+      },
+      {
+        "id": 5,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 101,
+        "text": "Maestro de la pesca",
+        "objective": 5000,
+        "desc": "Pesca 5000 peces",
+      	"subprize": 101
+      }
+    	,
+      {
+        "id": 6,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "Explorador de peces",
+        "objective": 10,
+        "desc": "Descubre 10 especies de peces del libro de coleccion",
+      	"subprize": 101
+      },
+      {
+        "id": 7,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "Fan de peces desconocidos",
+        "objective": 20,
+        "desc": "Descubre 20 especies de peces del libro de coleccion",
+      	"subprize": 101
+      }
+    ]
+}
