@@ -15,9 +15,10 @@ const io = new Server(server);
 
 const fs = require('fs');
 
-var itemDB = new Object();
-fs.readFile('/root/Database.json', function (error, content) {
-	itemDB = JSON.parse(content);
+
+var battlePassDB = new Object();
+fs.readFile('/home/ec2-user/PetFiles/bpData.json', function (error, content) {
+	battlePassDB = JSON.parse(content);
 });
 
 //Arreglo de salas activas
@@ -43,16 +44,6 @@ function sleep(ms) {
 	});
 }
 
-// const ProxyAgent = require('https-proxy-agent')
-const ProxyAgent = require('proxy-agent')
-const opts = {
-	transports: ['websocket'],
-	reconnect: true,
-	// secure: true,
-	// rejectUnauthorized:false,
-	// agent: new ProxyAgent('http://localhost:8888')
-	agent: new ProxyAgent('http://localhost:8888')
-}
 
 
 function getObjKey(obj, value) {
@@ -103,8 +94,8 @@ function countProperties(obj) {
 }
 
 const config = {
-	"host": "localhost",
-	"user": "root",
+	"host": "93.127.197.124",
+	"user": "Admin",
 	"password": "danielito001",
 	"base": "temporal_pet"
 };
@@ -113,8 +104,7 @@ var db = mysql.createConnection({
 	host: config.host,
 	user: config.user,
 	password: config.password,
-	database: config.base,
-	socketPath: '/var/run/mysqld/mysqld.sock'
+	database: config.base
 });
 
 db.connect(function (error) {
@@ -568,6 +558,105 @@ socket.on('stadiumStats', function (data)
 });
 
 
+socket.on('multiplayerPass', function (data) 
+{
+  
+	var uid = data;
+        		
+	
+	db.query("SELECT * FROM multiplayerGamePass WHERE userid=? LIMIT 1", [uid], function (err, rows, fields) 
+    {
+			if(rows.length == 0)
+            {
+                        db.query("INSERT INTO multiplayerGamePass(`userid`,`membershipType`)  VALUES(?, ?)", [uid, "free"], function (err1, rows1, result3) 
+    			{
+                        if (!!err1)
+						throw err1;
+                        
+                        var mpPass = new Object();
+                        mpPass.type = "free";
+                        mpPass.rw1 = 0;
+                        mpPass.rw2 = 0;                        
+                        mpPass.rw3 = 0;
+                        mpPass.rw4 = 0;                        
+                        mpPass.rw5 = 0;                        
+                        mpPass.rw6 = 0;                        
+                        mpPass.rw7 = 0;                        
+                        mpPass.rw8 = 0;                        
+                        mpPass.rw9 = 0;                       
+                        mpPass.rw10 = 0;                        
+                        mpPass.rw11 = 0;                        
+                        mpPass.rw12 = 0;                        
+                        mpPass.rw13 = 0;                        
+                        mpPass.rw14 = 0;                        
+                        mpPass.rw15 = 0;                        
+                        mpPass.rw16 = 0;                        
+                        mpPass.rw17 = 0;                        
+                        mpPass.rw18 = 0;                        
+                        mpPass.rw19 = 0;                        
+                        mpPass.rw20 = 0;                        
+                        mpPass.rw21 = 0;
+                        mpPass.rw22 = 0; 
+                         mpPass.rw23 = 0;                          
+                         mpPass.rw24 = 0;                          
+                         mpPass.rw25 = 0;                          
+                         mpPass.rw26 = 0;                          
+                         mpPass.rw27 = 0;                          
+                         mpPass.rw28 = 0;                          
+                         mpPass.rw29 = 0;                          
+                         mpPass.rw30 = 0;  
+                		socket.emit("mpPass", mpPass);
+                		console.log("Emitiendo e insertando pase multijugador");
+
+                });
+
+
+            }
+    		else
+            {
+                        var mpPass = new Object();
+                        mpPass.type = rows[0].membershipType;
+                        mpPass.rw1 = rows[0].rw1;
+                        mpPass.rw2 = rows[0].rw2;                        
+                        mpPass.rw3 = rows[0].rw3;
+                        mpPass.rw4 = rows[0].rw4;                        
+                        mpPass.rw5 = rows[0].rw5;                        
+                        mpPass.rw6 = rows[0].rw6;                        
+                        mpPass.rw7 = rows[0].rw7;                        
+                        mpPass.rw8 = rows[0].rw8;                        
+                        mpPass.rw9 = rows[0].rw9;                       
+                        mpPass.rw10 = rows[0].rw10;                        
+                        mpPass.rw11 = rows[0].rw11;                        
+                        mpPass.rw12 = rows[0].rw12;                        
+                        mpPass.rw13 = rows[0].rw13;                        
+                        mpPass.rw14 = rows[0].rw14;                        
+                        mpPass.rw15 = rows[0].rw15;                        
+                        mpPass.rw16 = rows[0].rw16;                        
+                        mpPass.rw17 = rows[0].rw17;                        
+                        mpPass.rw18 = rows[0].rw18;                        
+                        mpPass.rw19 = rows[0].rw19;                        
+                        mpPass.rw20 = rows[0].rw20;                        
+                        mpPass.rw21 = rows[0].rw21;
+                        mpPass.rw22 = rows[0].rw22; 
+                         mpPass.rw23 = rows[0].rw23;                          
+                         mpPass.rw24 = rows[0].rw24;                          
+                         mpPass.rw25 = rows[0].rw25;                          
+                         mpPass.rw26 = rows[0].rw26;                          
+                         mpPass.rw27 = rows[0].rw27;                          
+                         mpPass.rw28 = rows[0].rw28;                          
+                         mpPass.rw29 = rows[0].rw29;                          
+                         mpPass.rw30 = rows[0].rw30;  
+                		socket.emit("mpPass", mpPass);  
+                       console.log("Emitiendo carreras existentes");
+            	
+            }
+	});
+
+});
+
+
+
+
 
 
 socket.on('getWonRacesGuest', function (data) 
@@ -831,7 +920,7 @@ const roomID = data;
 socket.on('ST_Ready', function (data) 
 {
 const roomID = data;
-const racePlayers = 3; //Numero de jugdores para el estadio
+var racePlayers = 3; //Numero de jugdores para el estadio
 	
 	if(rooms[roomID] != null)
     {
@@ -863,6 +952,8 @@ const racePlayers = 3; //Numero de jugdores para el estadio
                             	readyUsers++;
                             }
             			}
+            		racePlayers= keys.length;
+            		console.log("La carrera ahora consta de : "+ racePlayers + " jugadores");
             		//Verifico si los jugadores estan listos
             		if(readyUsers ==  racePlayers)
                 	{
@@ -1100,6 +1191,148 @@ socket.on('getBubble', function (data)
 
 });
 
+socket.on('claimBPItem', function (data) 
+{
+
+	console.log("Reclamando objeto a usuario: " + data.pid);
+	const rwToClaim = data.rwIndex;
+	var claimType = "free";
+	var userPassType = "free";
+	var userCurrentMedals = 0;
+	var itemCost = 999;
+	var rwID = 3;
+    var rwIndexToUpdate = "rw";
+
+	rwIndexToUpdate = rwIndexToUpdate+ (rwToClaim+1).toString();
+
+//PRIMERO OBTENGO LOS DATOS DEL ITEM DE LA BD DEL PASE DE BATALLA
+
+		for (let i = 0; i < battlePassDB.length; i++) {
+			if (battlePassDB[i].rwIndex == rwToClaim) 
+            {
+				if (battlePassDB[i].cash == false) 
+                {
+					claimType = "free";
+					itemCost = battlePassDB[i].price;
+                	rwID = battlePassDB[i].id;
+				}
+				else 
+                {
+					claimType = "premium";
+					itemCost = battlePassDB[i].price;
+                	rwID = battlePassDB[i].id;
+
+				}
+
+				break;
+			}
+		}
+
+
+	db.query("SELECT membershipType FROM multiplayerGamePass WHERE userid=? LIMIT 1", [data.pid], function (err, rows, fields) 
+    {
+    			if(rows.length == 0)
+            	{
+                		//EMITO QUE NO EXISTE EL USUARIO EN LOS PASES DE BATALLA
+            			socket.emit("cannotClaimNoUser");
+
+            	
+            	}
+    			else
+    			{
+                		userPassType = rows[0].membershipType;
+                	db.query("SELECT wonRaces FROM minigamesStats WHERE userid=? LIMIT 1", [data.pid], function (err1, rows1, fields1) 
+    				{
+                    	if(rows1.length == 0)
+                        {
+                                        		//EMITO QUE NO EXISTE EL USUARIO EN LOS STATS MINIGAMES
+            					socket.emit("cannotClaimNoUser");
+                        }
+                    	else
+                    	{
+                        		userCurrentMedals = rows1[0].wonRaces;
+                        
+                        		if(claimType == "free")
+                                {
+                                	//Si le alcanzan las medallas se reclama
+                                	if(itemCost <= userCurrentMedals)
+                                    {
+                                    	userCurrentMedals -= itemCost;
+                                    	 db.query("UPDATE minigamesStats SET wonRaces = ? WHERE userid=? LIMIT 1", [userCurrentMedals, data.pid], function (err4, rows4, fields4) {
+												console.log("Se actualizaron las medallas al reclamar un item");
+										});
+                                    
+                                    	 db.query("UPDATE multiplayerGamePass SET "+rwIndexToUpdate+" = ? WHERE userid=? LIMIT 1", [true, data.pid], function (err5, rows5, fields5) {
+												console.log("Se actualizo el estado de reclamado de un item al reclamar");
+                                         
+                                         	var responseClaim = new Object();
+                                         		responseClaim.rwIndex = rwToClaim;
+                                         		responseClaim.medals = userCurrentMedals;
+                                                responseClaim.rwID = rwID;
+
+                                               socket.emit("itemClaimed", responseClaim);
+
+                                         		
+										});
+                                    	
+                                    }
+                                	else
+                                    {
+                                    	socket.emit("notEnoughMedals");
+                                    }
+
+                                }
+                        		else
+                                {	
+                                	//VERIFICO QUE EL USUARIO TENGA PASE PREMIUM
+                                	if(userPassType == "premium")
+                                    {	
+                                    	
+                                    	                              	//Si le alcanzan las medallas se reclama
+                                	if(itemCost <= userCurrentMedals)
+                                    {
+                                    	userCurrentMedals -= itemCost;
+                                    	 db.query("UPDATE minigamesStats SET wonRaces = ? WHERE userid=? LIMIT 1", [userCurrentMedals, data.pid], function (err4, rows4, fields4) {
+												console.log("Se actualizaron las medallas al reclamar un item");
+										});
+                                    
+                                    	 db.query("UPDATE multiplayerGamePass SET "+rwIndexToUpdate+" = ? WHERE userid=? LIMIT 1", [true, data.pid], function (err5, rows5, fields5) {
+												console.log("Se actualizo el estado de reclamado de un item al reclamar");
+                                               var responseClaim = new Object();
+                                         		responseClaim.rwIndex = rwToClaim;
+                                         		responseClaim.medals = userCurrentMedals;
+                                         		responseClaim.rwID = rwID;
+                                               socket.emit("itemClaimed", responseClaim);
+
+                                         		
+										});
+                                    	
+                                    }
+                                	else
+                                    {
+                                    	socket.emit("notEnoughMedals");
+                                    }
+                                    
+                                    }
+                                }
+                        
+                    	}
+                    
+                    
+                    });
+                	
+    			}
+    	
+    	
+	});
+
+
+		
+
+	
+});
+
+
 
 
 
@@ -1112,6 +1345,7 @@ socket.on('petMove', function (data)
   const dir = data.dir;
   const hashKey = data.hashKey;
   const roomID = data.roomID;
+const act = data.act;
 
 console.log("Se esta moviendo un pet en el roomID: " + roomID + " con el usuario: " + hashKey);
 
@@ -1145,6 +1379,7 @@ console.log("Se esta moviendo un pet en el roomID: " + roomID + " con el usuario
 	dat.y = y;
 	dat.hashKey = hashKey;
   	dat.dir = dir;
+	  	dat.act = act;
 
 
 
