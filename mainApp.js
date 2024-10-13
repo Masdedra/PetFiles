@@ -42,8 +42,8 @@ fs.readFile('/PetFiles/Database.json', function (error, content) {
 });
 
 
-const htmlTemplate = fs.readFileSync('PetFiles/espMail.html', 'utf-8');
-const htmlEng = fs.readFileSync('PetFiles/engMail.html', 'utf-8');
+const htmlTemplate = fs.readFileSync('/home/ec2-user/PetFiles/espMail.html', 'utf-8');
+const htmlEng = fs.readFileSync('/home/ec2-user/PetFiles/engMail.html', 'utf-8');
 
 var initialInvExt = new Object();
 var strInitialInvExt = "";
