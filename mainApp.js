@@ -47,7 +47,7 @@ const htmlEng = fs.readFileSync('/home/ec2-user/PetFiles/engMail.html', 'utf-8')
 
 var initialInvExt = new Object();
 var strInitialInvExt = "";
-fs.readFile('/PetFiles/BaseExtInventory.txt', function (error, content) {
+fs.readFile('/home/ec2-user/PetFiles/BaseExtInventory.txt', function (error, content) {
 	initialInvExt = JSON.parse(content);
 	strInitialInvExt = content;
 });
@@ -2689,7 +2689,7 @@ socket.on("GetPrizes", function (data) {
 
 
 		var dataToSend = new Object();
-		fs.readFile('/PetFiles/prizesList.json', function (error, content) {
+		fs.readFile('/home/ec2-user/PetFiles/prizesList.json', function (error, content) {
 			dataToSend = JSON.parse(content);
 			//console.log(data2);
 
@@ -2704,7 +2704,7 @@ socket.on("GetDiggingTreasures", function (data) {
 
 
 		var dataToSend = new Object();
-		fs.readFile('/PetFiles/digging.json', function (error, content) {
+		fs.readFile('/home/ec2-user/PetFiles/digging.json', function (error, content) {
 			dataToSend = JSON.parse(content);
 			//console.log(data2);
 
@@ -2718,7 +2718,7 @@ socket.on("GetPrizesShop", function (data) {
 
 
 		var dataToSend = new Object();
-		fs.readFile('/PetFiles/prizeShop.json', function (error, content) {
+		fs.readFile('/home/ec2-user/PetFiles/prizeShop.json', function (error, content) {
 			dataToSend = JSON.parse(content);
 			//console.log(data2);
 
@@ -11507,7 +11507,7 @@ function onError(error)
 
 		console.log('entrando a get fishes y mandando send fishes ' + process.cwd());
 		var data2 = new Object();
-		fs.readFile('/PetFiles/fishList.json', function (error, content) {
+		fs.readFile('/home/ec2-user/PetFiles/fishList.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
@@ -11519,7 +11519,7 @@ socket.on("GetItemsExt", function () {
 
 		console.log('entrando a GetItemsExt' + process.cwd());
 		var data2 = new Object();
-		fs.readFile('/PetFiles/sellersDB.json', function (error, content) {
+		fs.readFile('/home/ec2-user/PetFiles/sellersDB.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
@@ -11532,7 +11532,7 @@ socket.on("GetMissions", function () {
 
 		console.log('entrando a get missions y mandando send missions ' + process.cwd());
 		var data2 = new Object();
-		fs.readFile('/PetFiles/MissionList.json', function (error, content) {
+		fs.readFile('/home/ec2-user/PetFiles/MissionList.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
@@ -11550,7 +11550,7 @@ socket.on("GetDailyMissions", function (data) {
 		var strMissions = "";
 		console.log('entrando a get missions y mandando send missions daily' + process.cwd());
 		
-		fs.readFile('/PetFiles/DailyMissionList.json', function (error, content) {
+		fs.readFile('/home/ec2-user/PetFiles/DailyMissionList.json', function (error, content) {
 			missionObj = JSON.parse(content);
 			//console.log(data2);
 			missionList = missionObj["DailyMissions"];
@@ -11637,7 +11637,7 @@ socket.on("GetTreasures", function () {
 
 		
 		var data2 = new Object();
-		fs.readFile('/PetFiles/TreasureList.json', function (error, content) {
+		fs.readFile('/home/ec2-user/PetFiles/TreasureList.json', function (error, content) {
 			data2 = JSON.parse(content);
 			//console.log(data2);
 
@@ -14698,8 +14698,8 @@ socket.on("GetTime", function (data) {
 
 	async function sendPasswordEmail(id,mail,lang,token) {
     // Read the HTML template and image file
-    	const htmlPass = await readFileAsync('/root/espMail.html', 'utf-8');
- 		const htmlPassEng = await readFileAsync('/root/engMail.html', 'utf-8');
+    	const htmlPass = await readFileAsync('/home/ec2-user/PetFiles/espMail.html', 'utf-8');
+ 		const htmlPassEng = await readFileAsync('/home/ec2-user/PetFiles/engMail.html', 'utf-8');
 		//var idEncryp = encrypt(id.toString());
 		var result = htmlPass.replace('{encryptedURL}',token);
 
@@ -14783,7 +14783,3 @@ socket.on("GetTime", function (data) {
 	});
 
 });
-
-
-
-
