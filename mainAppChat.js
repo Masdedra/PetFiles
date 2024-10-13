@@ -4,7 +4,7 @@ const express = require('express'),
 	socket = require('socket.io'),
 	mysql = require('mysql');
 
-
+//Para ver si jala los cambios 2
 const app = express();
 const http = require('http');
 
