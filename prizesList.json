@@ -4,43 +4,43 @@
       {
         "id": 1,
         "rewardType": 1,
-        "qtyReward": 20,
+        "qtyReward": 100,
         "itemID": 10
        },
     {
         "id": 2,
         "rewardType": 1,
-        "qtyReward": 20,
+        "qtyReward": 200,
         "itemID": 10
        },
     {
         "id": 3,
         "rewardType": 1,
-        "qtyReward": 20,
+        "qtyReward": 300,
         "itemID": 10
        },
     {
         "id": 4,
         "rewardType": 1,
-        "qtyReward": 20,
+        "qtyReward": 400,
         "itemID": 10
        },
     {
         "id": 5,
         "rewardType": 1,
-        "qtyReward": 20,
+        "qtyReward": 500,
         "itemID": 10
        },
     {
         "id": 6,
         "rewardType": 1,
-        "qtyReward": 20,
+        "qtyReward": 600,
         "itemID": 10
        },
     {
         "id": 7,
-        "rewardType": 4,
-        "qtyReward": 20,
+        "rewardType": 2,
+        "qtyReward": 5,
         "itemID": 10
        }
     ]
