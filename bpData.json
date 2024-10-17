@@ -1,0 +1,242 @@
+[
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 0
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 4,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 1
+},
+{
+  "id": 159,
+  "cash": true,
+  "price": 7,
+  "claimed": false,
+  "blocked": true,
+  "rwIndex": 2
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 8,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 3
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 9,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 4
+},
+{
+  "id": 159,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 5
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 1,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 6
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 2,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 7
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 8
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 2,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 9
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 10
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 2,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 11
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 12
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 2,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 13
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 14
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 2,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 15
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 16
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 2,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 17
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 18
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 2,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 19
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 20
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 2,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 21
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 22
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 2,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 23
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 24
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 2,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 25
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 26
+},
+{
+  "id": 157,
+  "cash": false,
+  "price": 2,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 27
+},
+{
+  "id": 99,
+  "cash": false,
+  "price": 3,
+  "claimed": false,
+  "blocked": false,
+  "rwIndex": 28
+},
+{
+  "id": 159,
+  "cash": true,
+  "price": 7,
+  "claimed": false,
+  "blocked": true,
+  "rwIndex": 29
+}
+]
