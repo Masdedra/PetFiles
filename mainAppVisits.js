@@ -102,8 +102,7 @@ var db = mysql.createConnection({
 	host: config.host,
 	user: config.user,
 	password: config.password,
-	database: config.base,
-	socketPath: '/var/run/mysqld/mysqld.sock'
+	database: config.base
 });
 
 db.connect(function (error) {
