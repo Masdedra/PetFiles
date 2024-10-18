@@ -1,1359 +1,1359 @@
 {
 
-  "Missions": [
-    {
-      "id": 1,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 101,
-      "text": "label_pesca_peces",
-      "objective": 10,
-      "desc": "label_pesca_peces_desc",
-      "subprize": 101
+    "Missions": [
+      {
+        "id": 1,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 101,
+        "text": "label_pesca_peces",
+        "objective": 10,
+        "desc": "label_pesca_peces_desc",
+      	"subprize": 101
+        },
+      {
+        "id": 2,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 101,
+        "text": "label_pesca_peces2",
+        "objective": 100,
+        "desc": "label_pesca_peces2_desc",
+      	"subprize": 101
       },
-    {
-      "id": 2,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 101,
-      "text": "label_pesca_peces2",
-      "objective": 100,
-      "desc": "label_pesca_peces2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 3,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 101,
-      "text": "label_pesca_peces3",
-      "objective": 500,
-      "desc": "label_pesca_peces3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 4,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 101,
-      "text": "label_pesca_peces4",
-      "objective": 2000,
-      "desc": "label_pesca_peces4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 5,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 101,
-      "text": "label_pesca_peces5",
-      "objective": 5000,
-      "desc": "label_pesca_peces5_desc",
-      "subprize": 101
-    }
-    ,
-    {
-      "id": 6,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_explorador_de_peces",
-      "objective": 10,
-      "desc": "label_explorador_de_peces_desc",
-      "subprize": 101
-    },
-    {
-      "id": 7,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_explorador_de_peces2",
-      "objective": 20,
-      "desc": "label_explorador_de_peces2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 8,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_explorador_de_peces3",
-      "objective": 60,
-      "desc": "label_explorador_de_peces3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 9,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_explorador_de_peces4",
-      "objective": 120,
-      "desc": "label_explorador_de_peces4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 10,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_explorador_de_peces5",
-      "objective": 200,
-      "desc": "label_explorador_de_peces5_desc",
-      "subprize": 101
+      {
+        "id": 3,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 101,
+        "text": "label_pesca_peces3",
+        "objective": 500,
+        "desc": "label_pesca_peces3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 4,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 101,
+        "text": "label_pesca_peces4",
+        "objective": 2000,
+        "desc": "label_pesca_peces4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 5,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 101,
+        "text": "label_pesca_peces5",
+        "objective": 5000,
+        "desc": "label_pesca_peces5_desc",
+      	"subprize": 101
+      }
+    	,
+      {
+        "id": 6,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_explorador_de_peces",
+        "objective": 10,
+        "desc": "label_explorador_de_peces_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 7,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_explorador_de_peces2",
+        "objective": 20,
+        "desc": "label_explorador_de_peces2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 8,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_explorador_de_peces3",
+        "objective": 60,
+        "desc": "label_explorador_de_peces3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 9,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_explorador_de_peces4",
+        "objective": 120,
+        "desc": "label_explorador_de_peces4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 10,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_explorador_de_peces5",
+        "objective": 200,
+        "desc": "label_explorador_de_peces5_desc",
+      	"subprize": 101
 
-    },
-    {
-      "id": 11,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_inicios_de_socializacion",
-      "objective": 10,
-      "desc": "label_inicios_de_socializacion_desc",
-      "subprize": 101
-    }
-  ,
-    {
-      "id": 12,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_inicios_de_socializacion2",
-      "objective": 50,
-      "desc": "label_inicios_de_socializacion_desc",
-      "subprize": 101
-    }    
+      },
+      {
+        "id": 11,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_inicios_de_socializacion",
+        "objective": 10,
+        "desc": "label_inicios_de_socializacion_desc",
+      	"subprize": 101
+      }
     ,
-    {
-      "id": 13,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_inicios_de_socializacion3",
-      "objective": 100,
-      "desc": "label_inicios_de_socializacion_desc",
-      "subprize": 101
-    }    	,
-    {
-      "id": 14,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_inicios_de_socializacion4",
-      "objective": 500,
-      "desc": "label_inicios_de_socializacion_desc",
-      "subprize": 101
-    }	,
-    {
-      "id": 15,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_caza_bichos",
-      "objective": 10,
-      "desc": "label_caza_bichos_desc",
-      "subprize": 101
-    }	,
-    {
-      "id": 16,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_caza_bichos2",
-      "objective": 100,
-      "desc": "label_caza_bichos2_desc",
-      "subprize": 101
-    }	,
-    {
-      "id": 17,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_caza_bichos3",
-      "objective": 500,
-      "desc": "label_caza_bichos3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 18,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_caza_bichos4",
-      "objective": 1000,
-      "desc": "label_caza_bichos4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 19,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_encuentros_diminutos",
-      "objective": 10,
-      "desc": "label_encuentros_diminutos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 20,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_encuentros_diminutos2",
-      "objective": 20,
-      "desc": "label_encuentros_diminutos2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 21,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_encuentros_diminutos3",
-      "objective": 60,
-      "desc": "label_encuentros_diminutos3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 22,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_encuentros_diminutos4",
-      "objective": 120,
-      "desc": "label_encuentros_diminutos4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 23,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_encuentros_diminutos5",
-      "objective": 200,
-      "desc": "label_encuentros_diminutos5_desc",
-      "subprize": 101
-    },
-    {
-      "id": 24,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_bricolaje",
-      "objective": 10,
-      "desc": "label_mision_bricolaje_desc",
-      "subprize": 101
-    },
-    {
-      "id": 25,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_bricolaje2",
-      "objective": 50,
-      "desc": "label_mision_bricolaje2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 26,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_bricolaje3",
-      "objective": 100,
-      "desc": "label_mision_bricolaje3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 27,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_bricolaje4",
-      "objective": 150,
-      "desc": "label_mision_bricolaje4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 28,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_bricolaje5",
-      "objective": 300,
-      "desc": "label_mision_bricolaje5_desc",
-      "subprize": 101
-    },
-    {
-      "id": 29,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_buceo",
-      "objective": 20,
-      "desc": "label_mision_buceo_desc",
-      "subprize": 101
-    },
-    {
-      "id": 30,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_buceo2",
-      "objective": 50,
-      "desc": "label_mision_buceo2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 31,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_buceo3",
-      "objective": 150,
-      "desc": "label_mision_buceo3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 32,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_buceo4",
-      "objective": 400,
-      "desc": "label_mision_buceo4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 33,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_herramientas",
-      "objective": 10,
-      "desc": "label_mision_herramientas_desc",
-      "subprize": 101
-    },
-    {
-      "id": 34,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_herramientas2",
-      "objective": 30,
-      "desc": "label_mision_herramientas2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 35,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_herramientas3",
-      "objective": 300,
-      "desc": "label_mision_herramientas3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 36,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_muebles",
-      "objective": 5,
-      "desc": "label_mision_muebles_desc",
-      "subprize": 101
-    },
-    {
-      "id": 37,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_muebles2",
-      "objective": 20,
-      "desc": "label_mision_muebles2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 38,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_muebles3",
-      "objective": 50,
-      "desc": "label_mision_muebles3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 39,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_muebles4",
-      "objective": 100,
-      "desc": "label_mision_muebles4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 40,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_personalizacion",
-      "objective": 10,
-      "desc": "label_mision_personalizacion_desc",
-      "subprize": 101
-    },
-    {
-      "id": 41,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_personalizacion2",
-      "objective": 40,
-      "desc": "label_mision_personalizacion2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 42,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_personalizacion3",
-      "objective": 50,
-      "desc": "label_mision_personalizacion3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 43,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_personalizacion4",
-      "objective": 100,
-      "desc": "label_mision_personalizacion4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 44,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_tala",
-      "objective": 300,
-      "desc": "label_mision_tala_desc",
-      "subprize": 101
-    },
-    {
-      "id": 45,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_tala2",
-      "objective": 1000,
-      "desc": "label_mision_tala2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 46,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_tala3",
-      "objective": 3000,
-      "desc": "label_mision_tala3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 47,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_tala4",
-      "objective": 10000,
-      "desc": "label_mision_tala4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 48,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_recetas",
-      "objective": 10,
-      "desc": "label_mision_recetas_desc",
-      "subprize": 101
-    },
-    {
-      "id": 49,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_recetas2",
-      "objective": 50,
-      "desc": "label_mision_recetas2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 50,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_recetas3",
-      "objective": 100,
-      "desc": "label_mision_recetas3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 51,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_recetas4",
-      "objective": 500,
-      "desc": "label_mision_recetas4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 52,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_preparar_comida",
-      "objective": 10,
-      "desc": "label_mision_preparar_comida_desc",
-      "subprize": 101
-    },
-    {
-      "id": 53,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_preparar_comida2",
-      "objective": 50,
-      "desc": "label_mision_preparar_comida2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 54,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_preparar_comida3",
-      "objective": 200,
-      "desc": "label_mision_preparar_comida3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 55,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_preparar_comida4",
-      "objective": 500,
-      "desc": "label_mision_preparar_comida4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 56,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_reventar_herramientas",
-      "objective": 20,
-      "desc": "label_mision_reventar_herramientas_desc",
-      "subprize": 101
-    },
-    {
-      "id": 57,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_reventar_herramientas2",
-      "objective": 50,
-      "desc": "label_mision_reventar_herramientas2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 58,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_reventar_herramientas3",
-      "objective": 100,
-      "desc": "label_mision_reventar_herramientas3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 59,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_reventar_herramientas4",
-      "objective": 200,
-      "desc": "label_mision_reventar_herramientas4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 60,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_fragmentos",
-      "objective": 20,
-      "desc": "label_mision_fragmentos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 61,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_fragmentos2",
-      "objective": 50,
-      "desc": "label_mision_fragmentos2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 62,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_fragmentos3",
-      "objective": 150,
-      "desc": "label_mision_fragmentos3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 63,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_fragmentos4",
-      "objective": 400,
-      "desc": "label_mision_fragmentos4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 64,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_aurelio",
-      "objective": 5,
-      "desc": "label_mision_aurelio_desc",
-      "subprize": 101
-    },
-    {
-      "id": 65,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_aurelio2",
-      "objective": 20,
-      "desc": "label_mision_aurelio2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 66,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_aurelio3",
-      "objective": 70,
-      "desc": "label_mision_aurelio3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 67,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_aurelio4",
-      "objective": 200,
-      "desc": "label_mision_aurelio4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 68,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_maleza",
-      "objective": 50,
-      "desc": "label_mision_maleza_desc",
-      "subprize": 101
-    },
-    {
-      "id": 69,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_maleza2",
-      "objective": 600,
-      "desc": "label_mision_maleza_desc",
-      "subprize": 101
-    },
-    {
-      "id": 70,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_maleza3",
-      "objective": 1500,
-      "desc": "label_mision_maleza_desc",
-      "subprize": 101
-    },
-    {
-      "id": 71,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_plantar_flores",
-      "objective": 20,
-      "desc": "label_mision_plantar_flores_desc",
-      "subprize": 101
-    },
-    {
-      "id": 72,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_plantar_flores2",
-      "objective": 50,
-      "desc": "label_mision_plantar_flores2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 73,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_plantar_flores3",
-      "objective": 150,
-      "desc": "label_mision_plantar_flores3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 74,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_plantar_flores4",
-      "objective": 200,
-      "desc": "label_mision_plantar_flores4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 75,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_regar",
-      "objective": 10,
-      "desc": "label_mision_regar_desc",
-      "subprize": 101
-    },
-    {
-      "id": 76,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_regar2",
-      "objective": 50,
-      "desc": "label_mision_regar2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 77,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_regar3",
-      "objective": 500,
-      "desc": "label_mision_regar3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 78,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_regar4",
-      "objective": 1000,
-      "desc": "label_mision_regar4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 79,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_plantar",
-      "objective": 30,
-      "desc": "label_mision_plantar_desc",
-      "subprize": 101
-    },
-    {
-      "id": 80,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_plantar2",
-      "objective": 100,
-      "desc": "label_mision_plantar2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 81,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_plantar3",
-      "objective": 300,
-      "desc": "label_mision_plantar3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 82,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_vende_frutas_cosecha",
-      "objective": 50,
-      "desc": "label_mision_vende_frutas_cosecha_desc",
-      "subprize": 101
-    },
-    {
-      "id": 83,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_vende_frutas_cosecha2",
-      "objective": 500,
-      "desc": "label_mision_vende_frutas_cosecha_desc",
-      "subprize": 101
-    },
-    {
-      "id": 84,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_vende_frutas_cosecha3",
-      "objective": 2000,
-      "desc": "label_mision_vende_frutas_cosecha_desc",
-      "subprize": 101
-    },
-    {
-      "id": 85,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_vende_frutas_cosecha4",
-      "objective": 10000,
-      "desc": "label_mision_vende_frutas_cosecha_desc",
-      "subprize": 101
-    },
-    {
-      "id": 86,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_hibridas",
-      "objective": 10,
-      "desc": "label_mision_hibridas_desc",
-      "subprize": 101
-    },
-    {
-      "id": 87,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_hibridas2",
-      "objective": 50,
-      "desc": "label_mision_hibridas2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 88,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_hibridas3",
-      "objective": 100,
-      "desc": "label_mision_hibridas3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 89,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_hibridas4",
-      "objective": 200,
-      "desc": "label_mision_hibridas4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 90,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_saca_basura",
-      "objective": 500,
-      "desc": "label_mision_saca_basura_desc",
-      "subprize": 101
-    },
-    {
-      "id": 91,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_saca_basura2",
-      "objective": 1000,
-      "desc": "label_mision_saca_basura_desc",
-      "subprize": 101
-    },
-    {
-      "id": 92,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_saca_basura3",
-      "objective": 5000,
-      "desc": "label_mision_saca_basura_desc",
-      "subprize": 101
-    },
-    {
-      "id": 133,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_saca_basura4",
-      "objective": 10000,
-      "desc": "label_mision_saca_basura_desc",
-      "subprize": 101
-    },
-    { 
-      "id": 134,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_pesca_peces_seguidos",
-      "objective": 10,
-      "desc": "label_pesca_peces_seguidos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 93,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_pesca_peces_seguidos2",
-      "objective": 70,
-      "desc": "label_pesca_peces_seguidos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 94,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_pesca_peces_seguidos3",
-      "objective": 100,
-      "desc": "label_pesca_peces_seguidos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 95,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_ampliar_casa",
-      "objective": 1,
-      "desc": "label_ampliar_casa_desc",
-      "subprize": 101
-    },
-    {
-      "id": 96,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_ampliar_isla",
-      "objective": 1,
-      "desc": "label_ampliar_isla_desc",
-      "subprize": 101
-    },
-    {
-      "id": 97,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_favores_vecinos",
-      "objective": 5,
-      "desc": "label_favores_vecinos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 98,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_favores_vecinos2",
-      "objective": 20,
-      "desc": "label_favores_vecinos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 99,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_favores_vecinos3",
-      "objective": 30,
-      "desc": "label_favores_vecinos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 135,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_favores_vecinos4",
-      "objective": 100,
-      "desc": "label_favores_vecinos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 100,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_aprende_gestos",
-      "objective": 10,
-      "desc": "label_aprende_gestos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 101,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_aprende_gestos2",
-      "objective": 20,
-      "desc": "label_aprende_gestos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 102,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_aprende_gestos3",
-      "objective": 50,
-      "desc": "label_aprende_gestos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 103,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_aprende_camara",
-      "objective": 1,
-      "desc": "label_aprende_camara_desc",
-      "subprize": 101
-    },
-    {
-      "id": 104,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_estilo_celular",
-      "objective": 1,
-      "desc": "label_estilo_celular_desc",
-      "subprize": 101
-    },
-    {
-      "id": 105,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_compra_ambulantes",
-      "objective": 50,
-      "desc": "label_mision_compra_ambulantes_desc",
-      "subprize": 101
-    },
-    {
-      "id": 106,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_compra_ambulantes2",
-      "objective": 300,
-      "desc": "label_mision_compra_ambulantes_desc",
-      "subprize": 101
-    },
-    {
-      "id": 107,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_compra_ambulantes3",
-      "objective": 1000,
-      "desc": "label_mision_compra_ambulantes_desc",
-      "subprize": 101
-    },
-    {
-      "id": 108,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_primera_compra",
-      "objective": 1,
-      "desc": "label_mision_primera_compra_desc",
-      "subprize": 101
-    },
-    {
-      "id": 109,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_vender",
-      "objective": 1,
-      "desc": "label_mision_vender_desc",
-      "subprize": 101
-    },
-    {
-      "id": 110,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_vender2",
-      "objective": 100,
-      "desc": "label_mision_vender2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 111,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_vender3",
-      "objective": 1000,
-      "desc": "label_mision_vender3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 112,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_vender4",
-      "objective": 10000,
-      "desc": "label_mision_vender4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 113,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_vender5",
-      "objective": 100000,
-      "desc": "label_mision_vender5_desc",
-      "subprize": 101
-    },
-    {
-      "id": 114,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_vender6",
-      "objective": 1000000,
-      "desc": "label_mision_vender6_desc",
-      "subprize": 101
-    },
-    {
-      "id": 115,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_comprar",
-      "objective": 200,
-      "desc": "label_mision_comprar_desc",
-      "subprize": 101
-    },
-    {
-      "id": 116,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_comprar2",
-      "objective": 2000,
-      "desc": "label_mision_comprar2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 117,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_comprar3",
-      "objective": 20000,
-      "desc": "label_mision_comprar3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 118,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_comprar4",
-      "objective": 200000,
-      "desc": "label_mision_comprar4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 119,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_gastar",
-      "objective": 50000,
-      "desc": "label_mision_gastar_desc",
-      "subprize": 101
-    },
-    {
-      "id": 120,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_gastar2",
-      "objective": 200000,
-      "desc": "label_mision_gastar2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 121,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_gastar3",
-      "objective": 1000000,
-      "desc": "label_mision_gastar3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 122,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_deuda",
-      "objective": 1,
-      "desc": "label_mision_deuda_desc",
-      "subprize": 101
-    },
-    {
-      "id": 123,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_judias",
-      "objective": 1,
-      "desc": "label_mision_judias_desc",
-      "subprize": 101
-    },
-    {
-      "id": 124,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_judias_vender",
-      "objective": 1,
-      "desc": "label_mision_judias_vender_desc",
-      "subprize": 101
-    },
-    {
-      "id": 125,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_enviar_regalos",
-      "objective": 20,
-      "desc": "label_mision_enviar_regalos_desc",
-      "subprize": 101
-    },
-    {
-      "id": 126,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_enviar_regalos2",
-      "objective": 80,
-      "desc": "label_mision_enviar_regalos2_desc",
-      "subprize": 101
-    },
-    {
-      "id": 127,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_enviar_regalos3",
-      "objective": 200,
-      "desc": "label_mision_enviar_regalos3_desc",
-      "subprize": 101
-    },
-    {
-      "id": 128,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_enviar_regalos4",
-      "objective": 500,
-      "desc": "label_mision_enviar_regalos4_desc",
-      "subprize": 101
-    },
-    {
-      "id": 129,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_pulga",
-      "objective": 1,
-      "desc": "label_mision_pulga_desc",
-      "subprize": 101
-    },
-    {
-      "id": 130,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_avispa",
-      "objective": 1,
-      "desc": "label_mision_avispa_desc",
-      "subprize": 101
-    },
-    {
-      "id": 131,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_picadura",
-      "objective": 1,
-      "desc": "label_mision_picadura_desc",
-      "subprize": 101
-    },
-    {
-      "id": 132,
-      "active": true,
-      "reward": 4,
-      "qtyReward": 5000,
-      "text": "label_mision_picadura2",
-      "objective": 1,
-      "desc": "label_mision_picadura2_desc",
-      "subprize": 101
-    }
-  ]
+      {
+        "id": 12,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_inicios_de_socializacion2",
+        "objective": 50,
+        "desc": "label_inicios_de_socializacion_desc",
+      	"subprize": 101
+      }    
+    	,
+      {
+        "id": 13,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_inicios_de_socializacion3",
+        "objective": 100,
+        "desc": "label_inicios_de_socializacion_desc",
+      	"subprize": 101
+      }    	,
+      {
+        "id": 14,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_inicios_de_socializacion4",
+        "objective": 500,
+        "desc": "label_inicios_de_socializacion_desc",
+      	"subprize": 101
+      }	,
+      {
+        "id": 15,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_caza_bichos",
+        "objective": 10,
+        "desc": "label_caza_bichos_desc",
+      	"subprize": 101
+      }	,
+      {
+        "id": 16,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_caza_bichos2",
+        "objective": 100,
+        "desc": "label_caza_bichos2_desc",
+      	"subprize": 101
+      }	,
+      {
+        "id": 17,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_caza_bichos3",
+        "objective": 500,
+        "desc": "label_caza_bichos3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 18,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_caza_bichos4",
+        "objective": 1000,
+        "desc": "label_caza_bichos4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 19,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_encuentros_diminutos",
+        "objective": 10,
+        "desc": "label_encuentros_diminutos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 20,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_encuentros_diminutos2",
+        "objective": 20,
+        "desc": "label_encuentros_diminutos2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 21,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_encuentros_diminutos3",
+        "objective": 60,
+        "desc": "label_encuentros_diminutos3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 22,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_encuentros_diminutos4",
+        "objective": 120,
+        "desc": "label_encuentros_diminutos4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 23,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_encuentros_diminutos5",
+        "objective": 200,
+        "desc": "label_encuentros_diminutos5_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 24,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_bricolaje",
+        "objective": 10,
+        "desc": "label_mision_bricolaje_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 25,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_bricolaje2",
+        "objective": 50,
+        "desc": "label_mision_bricolaje2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 26,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_bricolaje3",
+        "objective": 100,
+        "desc": "label_mision_bricolaje3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 27,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_bricolaje4",
+        "objective": 150,
+        "desc": "label_mision_bricolaje4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 28,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_bricolaje5",
+        "objective": 300,
+        "desc": "label_mision_bricolaje5_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 29,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_buceo",
+        "objective": 20,
+        "desc": "label_mision_buceo_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 30,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_buceo2",
+        "objective": 50,
+        "desc": "label_mision_buceo2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 31,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_buceo3",
+        "objective": 150,
+        "desc": "label_mision_buceo3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 32,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_buceo4",
+        "objective": 400,
+        "desc": "label_mision_buceo4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 33,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_herramientas",
+        "objective": 10,
+        "desc": "label_mision_herramientas_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 34,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_herramientas2",
+        "objective": 30,
+        "desc": "label_mision_herramientas2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 35,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_herramientas3",
+        "objective": 300,
+        "desc": "label_mision_herramientas3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 36,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_muebles",
+        "objective": 5,
+        "desc": "label_mision_muebles_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 37,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_muebles2",
+        "objective": 20,
+        "desc": "label_mision_muebles2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 38,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_muebles3",
+        "objective": 50,
+        "desc": "label_mision_muebles3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 39,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_muebles4",
+        "objective": 100,
+        "desc": "label_mision_muebles4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 40,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_personalizacion",
+        "objective": 10,
+        "desc": "label_mision_personalizacion_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 41,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_personalizacion2",
+        "objective": 40,
+        "desc": "label_mision_personalizacion2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 42,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_personalizacion3",
+        "objective": 50,
+        "desc": "label_mision_personalizacion3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 43,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_personalizacion4",
+        "objective": 100,
+        "desc": "label_mision_personalizacion4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 44,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_tala",
+        "objective": 300,
+        "desc": "label_mision_tala_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 45,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_tala2",
+        "objective": 1000,
+        "desc": "label_mision_tala2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 46,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_tala3",
+        "objective": 3000,
+        "desc": "label_mision_tala3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 47,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_tala4",
+        "objective": 10000,
+        "desc": "label_mision_tala4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 48,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_recetas",
+        "objective": 10,
+        "desc": "label_mision_recetas_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 49,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_recetas2",
+        "objective": 50,
+        "desc": "label_mision_recetas2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 50,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_recetas3",
+        "objective": 100,
+        "desc": "label_mision_recetas3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 51,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_recetas4",
+        "objective": 500,
+        "desc": "label_mision_recetas4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 52,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_preparar_comida",
+        "objective": 10,
+        "desc": "label_mision_preparar_comida_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 53,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_preparar_comida2",
+        "objective": 50,
+        "desc": "label_mision_preparar_comida2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 54,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_preparar_comida3",
+        "objective": 200,
+        "desc": "label_mision_preparar_comida3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 55,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_preparar_comida4",
+        "objective": 500,
+        "desc": "label_mision_preparar_comida4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 56,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_reventar_herramientas",
+        "objective": 20,
+        "desc": "label_mision_reventar_herramientas_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 57,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_reventar_herramientas2",
+        "objective": 50,
+        "desc": "label_mision_reventar_herramientas2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 58,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_reventar_herramientas3",
+        "objective": 100,
+        "desc": "label_mision_reventar_herramientas3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 59,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_reventar_herramientas4",
+        "objective": 200,
+        "desc": "label_mision_reventar_herramientas4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 60,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_fragmentos",
+        "objective": 20,
+        "desc": "label_mision_fragmentos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 61,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_fragmentos2",
+        "objective": 50,
+        "desc": "label_mision_fragmentos2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 62,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_fragmentos3",
+        "objective": 150,
+        "desc": "label_mision_fragmentos3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 63,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_fragmentos4",
+        "objective": 400,
+        "desc": "label_mision_fragmentos4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 64,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_aurelio",
+        "objective": 5,
+        "desc": "label_mision_aurelio_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 65,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_aurelio2",
+        "objective": 20,
+        "desc": "label_mision_aurelio2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 66,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_aurelio3",
+        "objective": 70,
+        "desc": "label_mision_aurelio3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 67,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_aurelio4",
+        "objective": 200,
+        "desc": "label_mision_aurelio4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 68,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_maleza",
+        "objective": 50,
+        "desc": "label_mision_maleza_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 69,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_maleza2",
+        "objective": 600,
+        "desc": "label_mision_maleza_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 70,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_maleza3",
+        "objective": 1500,
+        "desc": "label_mision_maleza_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 71,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_plantar_flores",
+        "objective": 20,
+        "desc": "label_mision_plantar_flores_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 72,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_plantar_flores2",
+        "objective": 50,
+        "desc": "label_mision_plantar_flores2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 73,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_plantar_flores3",
+        "objective": 150,
+        "desc": "label_mision_plantar_flores3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 74,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_plantar_flores4",
+        "objective": 200,
+        "desc": "label_mision_plantar_flores4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 75,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_regar",
+        "objective": 10,
+        "desc": "label_mision_regar_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 76,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_regar2",
+        "objective": 50,
+        "desc": "label_mision_regar2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 77,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_regar3",
+        "objective": 500,
+        "desc": "label_mision_regar3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 78,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_regar4",
+        "objective": 1000,
+        "desc": "label_mision_regar4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 79,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_plantar",
+        "objective": 30,
+        "desc": "label_mision_plantar_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 80,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_plantar2",
+        "objective": 100,
+        "desc": "label_mision_plantar2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 81,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_plantar3",
+        "objective": 300,
+        "desc": "label_mision_plantar3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 82,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_vende_frutas_cosecha",
+        "objective": 50,
+        "desc": "label_mision_vende_frutas_cosecha_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 83,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_vende_frutas_cosecha2",
+        "objective": 500,
+        "desc": "label_mision_vende_frutas_cosecha_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 84,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_vende_frutas_cosecha3",
+        "objective": 2000,
+        "desc": "label_mision_vende_frutas_cosecha_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 85,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_vende_frutas_cosecha4",
+        "objective": 10000,
+        "desc": "label_mision_vende_frutas_cosecha_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 86,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_hibridas",
+        "objective": 10,
+        "desc": "label_mision_hibridas_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 87,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_hibridas2",
+        "objective": 50,
+        "desc": "label_mision_hibridas2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 88,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_hibridas3",
+        "objective": 100,
+        "desc": "label_mision_hibridas3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 89,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_hibridas4",
+        "objective": 200,
+        "desc": "label_mision_hibridas4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 90,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_saca_basura",
+        "objective": 500,
+        "desc": "label_mision_saca_basura_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 91,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_saca_basura2",
+        "objective": 1000,
+        "desc": "label_mision_saca_basura_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 92,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_saca_basura3",
+        "objective": 5000,
+        "desc": "label_mision_saca_basura_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 133,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_saca_basura4",
+        "objective": 10000,
+        "desc": "label_mision_saca_basura_desc",
+      	"subprize": 101
+      },
+      { 
+        "id": 134,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_pesca_peces_seguidos",
+        "objective": 10,
+        "desc": "label_pesca_peces_seguidos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 93,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_pesca_peces_seguidos2",
+        "objective": 70,
+        "desc": "label_pesca_peces_seguidos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 94,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_pesca_peces_seguidos3",
+        "objective": 100,
+        "desc": "label_pesca_peces_seguidos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 95,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_ampliar_casa",
+        "objective": 1,
+        "desc": "label_ampliar_casa_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 96,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_ampliar_isla",
+        "objective": 1,
+        "desc": "label_ampliar_isla_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 97,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_favores_vecinos",
+        "objective": 5,
+        "desc": "label_favores_vecinos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 98,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_favores_vecinos2",
+        "objective": 20,
+        "desc": "label_favores_vecinos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 99,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_favores_vecinos3",
+        "objective": 30,
+        "desc": "label_favores_vecinos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 135,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_favores_vecinos4",
+        "objective": 100,
+        "desc": "label_favores_vecinos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 100,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_aprende_gestos",
+        "objective": 10,
+        "desc": "label_aprende_gestos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 101,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_aprende_gestos2",
+        "objective": 20,
+        "desc": "label_aprende_gestos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 102,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_aprende_gestos3",
+        "objective": 50,
+        "desc": "label_aprende_gestos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 103,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_aprende_camara",
+        "objective": 1,
+        "desc": "label_aprende_camara_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 104,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_estilo_celular",
+        "objective": 1,
+        "desc": "label_estilo_celular_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 105,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_compra_ambulantes",
+        "objective": 50,
+        "desc": "label_mision_compra_ambulantes_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 106,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_compra_ambulantes2",
+        "objective": 300,
+        "desc": "label_mision_compra_ambulantes_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 107,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_compra_ambulantes3",
+        "objective": 1000,
+        "desc": "label_mision_compra_ambulantes_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 108,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_primera_compra",
+        "objective": 1,
+        "desc": "label_mision_primera_compra_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 109,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_vender",
+        "objective": 1,
+        "desc": "label_mision_vender_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 110,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_vender2",
+        "objective": 100,
+        "desc": "label_mision_vender2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 111,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_vender3",
+        "objective": 1000,
+        "desc": "label_mision_vender3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 112,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_vender4",
+        "objective": 10000,
+        "desc": "label_mision_vender4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 113,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_vender5",
+        "objective": 100000,
+        "desc": "label_mision_vender5_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 114,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_vender6",
+        "objective": 1000000,
+        "desc": "label_mision_vender6_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 115,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_comprar",
+        "objective": 200,
+        "desc": "label_mision_comprar_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 116,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_comprar2",
+        "objective": 2000,
+        "desc": "label_mision_comprar2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 117,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_comprar3",
+        "objective": 20000,
+        "desc": "label_mision_comprar3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 118,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_comprar4",
+        "objective": 200000,
+        "desc": "label_mision_comprar4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 119,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_gastar",
+        "objective": 50000,
+        "desc": "label_mision_gastar_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 120,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_gastar2",
+        "objective": 200000,
+        "desc": "label_mision_gastar2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 121,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_gastar3",
+        "objective": 1000000,
+        "desc": "label_mision_gastar3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 122,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_deuda",
+        "objective": 1,
+        "desc": "label_mision_deuda_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 123,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_judias",
+        "objective": 1,
+        "desc": "label_mision_judias_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 124,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_judias_vender",
+        "objective": 1,
+        "desc": "label_mision_judias_vender_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 125,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_enviar_regalos",
+        "objective": 20,
+        "desc": "label_mision_enviar_regalos_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 126,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_enviar_regalos2",
+        "objective": 80,
+        "desc": "label_mision_enviar_regalos2_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 127,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_enviar_regalos3",
+        "objective": 200,
+        "desc": "label_mision_enviar_regalos3_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 128,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_enviar_regalos4",
+        "objective": 500,
+        "desc": "label_mision_enviar_regalos4_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 129,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_pulga",
+        "objective": 1,
+        "desc": "label_mision_pulga_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 130,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_avispa",
+        "objective": 1,
+        "desc": "label_mision_avispa_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 131,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_picadura",
+        "objective": 1,
+        "desc": "label_mision_picadura_desc",
+      	"subprize": 101
+      },
+      {
+        "id": 132,
+        "active": true,
+        "reward": 4,
+        "qtyReward": 5000,
+        "text": "label_mision_picadura2",
+        "objective": 1,
+        "desc": "label_mision_picadura2_desc",
+      	"subprize": 101
+      }
+    ]
 }
