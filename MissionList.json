@@ -1,1379 +1,1359 @@
 {
 
-    "Missions": [
-      {
-        "id": 1,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 101,
-        "text": "Pesca principiante",
-        "objective": 10,
-        "desc": "Pesca 10 peces",
-      	"subprize": 101
-        },
-      {
-        "id": 2,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 101,
-        "text": "Buena pesca",
-        "objective": 100,
-        "desc": "Pesca 100 peces",
-      	"subprize": 101
+  "Missions": [
+    {
+      "id": 1,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_pesca_peces",
+      "objective": 10,
+      "desc": "label_pesca_peces_desc",
+      "subprize": 101
       },
-      {
-        "id": 3,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 101,
-        "text": "Rompiendo caÃ±as",
-        "objective": 500,
-        "desc": "Pesca 500 peces",
-      	"subprize": 101
-      },
-      {
-        "id": 4,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 101,
-        "text": "Maestro del anzuelo",
-        "objective": 2000,
-        "desc": "Pesca 2000 peces",
-      	"subprize": 101
-      },
-      {
-        "id": 5,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 101,
-        "text": "Maestro de la pesca",
-        "objective": 5000,
-        "desc": "Pesca 5000 peces",
-      	"subprize": 101
-      }
-    	,
-      {
-        "id": 6,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Explorador de peces",
-        "objective": 10,
-        "desc": "Descubre 10 especies de peces del libro de coleccion",
-      	"subprize": 101
-      },
-      {
-        "id": 7,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Fan de peces desconocidos",
-        "objective": 20,
-        "desc": "Descubre 20 especies de peces del libro de coleccion",
-      	"subprize": 101
-      },
-      {
-        "id": 8,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Investigador de peces",
-        "objective": 60,
-        "desc": "Descubre 60 especies de peces del libro de coleccion",
-      	"subprize": 101
-      },
-      {
-        "id": 9,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Maestro de los peces",
-        "objective": 120,
-        "desc": "Descubre 120 especies de peces del libro de coleccion",
-      	"subprize": 101
-      },
-      {
-        "id": 10,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Dime que pez y te dire quien eres",
-        "objective": 200,
-        "desc": "Descubre 200 especies de peces del libro de coleccion",
-      	"subprize": 101
-
-      },
-      {
-        "id": 11,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Inicios de socializacion",
-        "objective": 10,
-        "desc": "Saluda y recibe un saludo de vuelta por diferentes vecinos",
-      	"subprize": 101
-      }
+    {
+      "id": 2,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_pesca_peces2",
+      "objective": 100,
+      "desc": "label_pesca_peces2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 3,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_pesca_peces3",
+      "objective": 500,
+      "desc": "label_pesca_peces3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 4,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_pesca_peces4",
+      "objective": 2000,
+      "desc": "label_pesca_peces4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 5,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_pesca_peces5",
+      "objective": 5000,
+      "desc": "label_pesca_peces5_desc",
+      "subprize": 101
+    }
     ,
-      {
-        "id": 12,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Fuera miedo",
-        "objective": 50,
-        "desc": "Saluda y recibe un saludo de vuelta por diferentes vecinos",
-      	"subprize": 101
-      }    
-    	,
-      {
-        "id": 13,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mascota sociable",
-        "objective": 100,
-        "desc": "Saluda y recibe un saludo de vuelta por diferentes vecinos",
-      	"subprize": 101
-      }    	,
-      {
-        "id": 14,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Extrovertido",
-        "objective": 500,
-        "desc": "Saluda y recibe un saludo de vuelta por diferentes vecinos",
-      	"subprize": 101
-      }	,
-      {
-        "id": 15,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Una nueva especie diminuta",
-        "objective": 10,
-        "desc": "Caza 10 bichos con una red",
-      	"subprize": 101
-      }	,
-      {
-        "id": 16,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Conocedor de bichos",
-        "objective": 100,
-        "desc": "Caza 100 bichos con una red",
-      	"subprize": 101
-      }	,
-      {
-        "id": 17,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Amigos diminutos",
-        "objective": 500,
-        "desc": "Caza 500 bichos con una red",
-      	"subprize": 101
-      },
-      {
-        "id": 18,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Amante de los bichos",
-        "objective": 1000,
-        "desc": "Caza 1000 bichos con una red",
-      	"subprize": 101
-      },
-      {
-        "id": 19,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Encuentros diminutos",
-        "objective": 10,
-        "desc": "Descubre 10 especies de bichos del libro de coleccion",
-      	"subprize": 101
-      },
-      {
-        "id": 20,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mas amigos diminutos",
-        "objective": 20,
-        "desc": "Descubre 20 especies de bichos del libro de coleccion",
-      	"subprize": 101
-      },
-      {
-        "id": 21,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Iman de bichos",
-        "objective": 60,
-        "desc": "Descubre 60 especies de bichos del libro de coleccion",
-      	"subprize": 101
-      },
-      {
-        "id": 22,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Investigador de bichos",
-        "objective": 120,
-        "desc": "Descubre 120 especies de bichos del libro de coleccion",
-      	"subprize": 101
-      },
-      {
-        "id": 23,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Experto en bichos",
-        "objective": 200,
-        "desc": "Descubre 200 especies de bichos del libro de coleccion",
-      	"subprize": 101
-      },
-      {
-        "id": 24,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Novato del bricolaje",
-        "objective": 10,
-        "desc": "Aprende a hacer 10 objetos de bricolaje",
-      	"subprize": 101
-      },
-      {
-        "id": 25,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Aprendiz bricolaje",
-        "objective": 50,
-        "desc": "Aprende a hacer 50 objetos de bricolaje",
-      	"subprize": 101
-      },
-      {
-        "id": 26,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "El saber no ocupa lugar",
-        "objective": 100,
-        "desc": "Aprende a hacer 100 objetos de bricolaje",
-      	"subprize": 101
-      },
-      {
-        "id": 27,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "De seguro sobrevives",
-        "objective": 150,
-        "desc": "Aprende a hacer 150 objetos de bricolaje",
-      	"subprize": 101
-      },
-      {
-        "id": 28,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Ha sido muy facil",
-        "objective": 300,
-        "desc": "Aprende a hacer 300 objetos de bricolaje",
-      	"subprize": 101
-      },
-      {
-        "id": 29,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Primeros buceos",
-        "objective": 20,
-        "desc": "Atrapa 20 especies mientras te sumerges en el lago",
-      	"subprize": 101
-      },
-      {
-        "id": 30,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Las profundidades no son mi miedo",
-        "objective": 50,
-        "desc": "Atrapa 50 especies mientras te sumerges en el lago",
-      	"subprize": 101
-      },
-      {
-        "id": 31,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mas alla de la superficie",
-        "objective": 150,
-        "desc": "Atrapa 150 especies mientras te sumerges en el lago",
-      	"subprize": 101
-      },
-      {
-        "id": 32,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Hay un mundo nuevo debajo del agua",
-        "objective": 400,
-        "desc": "Atrapa 400 especies mientras te sumerges en el lago",
-      	"subprize": 101
-      },
-      {
-        "id": 33,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mis habilidades no son nuevas",
-        "objective": 10,
-        "desc": "Construye 10 herramientas en la mesa de creacion",
-      	"subprize": 101
-      },
-      {
-        "id": 34,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "La construccion es lo mio",
-        "objective": 30,
-        "desc": "Construye 30 herramientas en la mesa de creacion",
-      	"subprize": 101
-      },
-      {
-        "id": 34,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Experto constructor",
-        "objective": 100,
-        "desc": "Construye 100 herramientas en la mesa de creacion",
-      	"subprize": 101
-      },
-      {
-        "id": 35,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Construyo lo que sea",
-        "objective": 300,
-        "desc": "Construye 300 herramientas en la mesa de creacion",
-      	"subprize": 101
-      },
-      {
-        "id": 36,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Madera, piedra y metal",
-        "objective": 5,
-        "desc": "Construye 5 muebles",
-      	"subprize": 101
-      },
-      {
-        "id": 37,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Tornillos y tuercas",
-        "objective": 20,
-        "desc": "Construye 20 muebles",
-      	"subprize": 101
-      },
-      {
-        "id": 38,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Uniendo piezas de construccion",
-        "objective": 50,
-        "desc": "Construye 50 muebles",
-      	"subprize": 101
-      },
-      {
-        "id": 39,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mueblero",
-        "objective": 100,
-        "desc": "Construye 100 muebles",
-      	"subprize": 101
-      },
-      {
-        "id": 40,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Cambios de color",
-        "objective": 10,
-        "desc": "Personaliza 10 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 41,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Algo no me gusta, que es?",
-        "objective": 40,
-        "desc": "Personaliza 40 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 42,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Gustos y mal gustos",
-        "objective": 50,
-        "desc": "Personaliza 50 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 43,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Insatisfecho con algo",
-        "objective": 100,
-        "desc": "Personaliza 100 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 44,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Tala de arboles",
-        "objective": 20,
-        "desc": "Recolecta 20 unidades madera con el hacha",
-      	"subprize": 101
-      },
-      {
-        "id": 45,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Troncos por doquier",
-        "objective": 50,
-        "desc": "Recolecta 50 unidades madera con el hacha",
-      	"subprize": 101
-      },
-      {
-        "id": 46,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Hachas y mas hachas",
-        "objective": 300,
-        "desc": "Recolecta 300 unidades madera con el hacha",
-      	"subprize": 101
-      },
-      {
-        "id": 47,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "1 arbol talado, 3 arboles plantados",
-        "objective": 2000,
-        "desc": "Recolecta 2000 unidades madera con el hacha",
-      	"subprize": 101
-      },
-      {
-        "id": 48,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mis primeras recetas",
-        "objective": 10,
-        "desc": "Aprende 10 recetas de cocina",
-      	"subprize": 101
-      },
-      {
-        "id": 49,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Aprendiz del chef",
-        "objective": 50,
-        "desc": "Aprende 50 recetas de cocina",
-      	"subprize": 101
-      },
-      {
-        "id": 50,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Una seta de China, la traigo de China",
-        "objective": 100,
-        "desc": "Aprende 100 recetas de cocina",
-      	"subprize": 101
-      },
-      {
-        "id": 51,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "La cocina es para divertirse",
-        "objective": 500,
-        "desc": "Aprende 500 recetas de cocina",
-      	"subprize": 101
-      },
-      {
-        "id": 52,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Sal y pimienta",
-        "objective": 10,
-        "desc": "Prepara 10 recetas de cocina",
-      	"subprize": 101
-      },
-      {
-        "id": 53,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "No hay nada peor que el hambre",
-        "objective": 50,
-        "desc": "Prepara 50 recetas de cocina",
-      	"subprize": 101
-      },
-      {
-        "id": 54,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Chef profesional",
-        "objective": 200,
-        "desc": "Prepara 200 recetas de cocina",
-      	"subprize": 101
-      },
-      {
-        "id": 55,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Ingredientes mas que conocidos",
-        "objective": 500,
-        "desc": "Prepara 500 recetas de cocina",
-      	"subprize": 101
-      },
-      {
-        "id": 56,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Herramientas locas",
-        "objective": 20,
-        "desc": "Revienta 20 herramientas",
-      	"subprize": 101
-      },
-      {
-        "id": 57,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Constructor impulsivo",
-        "objective": 50,
-        "desc": "Revienta 50 herramientas",
-      	"subprize": 101
-      },
-      {
-        "id": 58,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Que rapido se gastan",
-        "objective": 100,
-        "desc": "Revienta 100 herramientas",
-      	"subprize": 101
-      },
-      {
-        "id": 59,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Manos de obrero",
-        "objective": 200,
-        "desc": "Revienta 200 herramientas",
-      	"subprize": 101
-      },
-      {
-        "id": 60,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Descubrimientos secretos",
-        "objective": 20,
-        "desc": "Encuentra 20 fragmentos antiguos",
-      	"subprize": 101
-      },
-      {
-        "id": 61,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "El pasado tiene historia",
-        "objective": 50,
-        "desc": "Encuentra 50 fragmentos antiguos",
-      	"subprize": 101
-      },
-      {
-        "id": 62,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Reconstruyendo el pasado",
-        "objective": 150,
-        "desc": "Encuentra 150 fragmentos antiguos",
-      	"subprize": 101
-      },
-      {
-        "id": 63,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Origenes antiguos",
-        "objective": 400,
-        "desc": "Encuentra 400 fragmentos antiguos",
-      	"subprize": 101
-      },
-      {
-        "id": 64,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Investigando los origenes",
-        "objective": 5,
-        "desc": "Entrega 5 fragmentos antiguos a Aurelio",
-      	"subprize": 101
-      },
-      {
-        "id": 65,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Desconocemos lo que fuimos",
-        "objective": 20,
-        "desc": "Entrega 20 fragmentos antiguos a Aurelio",
-      	"subprize": 101
-      },
-      {
-        "id": 66,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Antepasados de las tierras inferiores",
-        "objective": 70,
-        "desc": "Entrega 70 fragmentos antiguos a Aurelio",
-      	"subprize": 101
-      },
-      {
-        "id": 67,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Terrenos ocultos debajo del cielo",
-        "objective": 200,
-        "desc": "Entrega 200 fragmentos antiguos a Aurelio",
-      	"subprize": 101
-      },
-      {
-        "id": 68,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mucha rama",
-        "objective": 50,
-        "desc": "Quita maleza del suelo",
-      	"subprize": 101
-      },
-      {
-        "id": 69,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Soy alergico a la maleza",
-        "objective": 200,
-        "desc": "Quita maleza del suelo",
-      	"subprize": 101
-      },
-      {
-        "id": 69,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Una limpiada no viene mal",
-        "objective": 600,
-        "desc": "Quita maleza del suelo",
-      	"subprize": 101
-      },
-      {
-        "id": 70,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "A quien le gusta la maleza?",
-        "objective": 1500,
-        "desc": "Quita maleza del suelo",
-      	"subprize": 101
-      },
-      {
-        "id": 71,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Rosas rojas",
-        "objective": 20,
-        "desc": "Siembra 20 semillas de flores",
-      	"subprize": 101
-      },
-      {
-        "id": 72,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Colorin colorado, el tulipan ha floreado",
-        "objective": 50,
-        "desc": "Siembra 50 semillas de flores",
-      	"subprize": 101
-      },
-      {
-        "id": 73,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Coloridas y aromaticas",
-        "objective": 150,
-        "desc": "Siembra 150 semillas de flores",
-      	"subprize": 101
-      },
-      {
-        "id": 74,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Jardin encantador",
-        "objective": 200,
-        "desc": "Siembra 200 semillas de flores",
-      	"subprize": 101
-      },
-      {
-        "id": 75,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Jardinero",
-        "objective": 10,
-        "desc": "Riega 10 plantas usando regaderas",
-      	"subprize": 101
-      },
-      {
-        "id": 76,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Las plantas necesitan agua",
-        "objective": 50,
-        "desc": "Riega 50 plantas usando regaderas",
-      	"subprize": 101
-      },
-      {
-        "id": 77,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Amor por las plantas",
-        "objective": 500,
-        "desc": "Riega 500 plantas usando regaderas",
-      	"subprize": 101
-      },
-      {
-        "id": 78,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Obsesion por la jardineria",
-        "objective": 1000,
-        "desc": "Riega 1000 plantas usando regaderas",
-      	"subprize": 101
-      },
-      {
-        "id": 79,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Amante de la naturaleza",
-        "objective": 30,
-        "desc": "Planta 30 arboles",
-      	"subprize": 101
-      },
-      {
-        "id": 80,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Oxigeno puro",
-        "objective": 100,
-        "desc": "Planta 100 arboles",
-      	"subprize": 101
-      },
-      {
-        "id": 81,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "El verde es mi color favorito",
-        "objective": 300,
-        "desc": "Planta 300 arboles",
-      	"subprize": 101
-      },
-      {
-        "id": 82,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Productor de frutas",
-        "objective": 50,
-        "desc": "Vende frutas de tu propia cosecha",
-      	"subprize": 101
-      },
-      {
-        "id": 83,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Que? Vamos a vender frutas?",
-        "objective": 500,
-        "desc": "Vende frutas de tu propia cosecha",
-      	"subprize": 101
-      },
-      {
-        "id": 84,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Demasiadas frutas!",
-        "objective": 2000,
-        "desc": "Vende frutas de tu propia cosecha",
-      	"subprize": 101
-      },
-      {
-        "id": 85,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Experto cosechador",
-        "objective": 10000,
-        "desc": "Vende frutas de tu propia cosecha",
-      	"subprize": 101
-      },
-      {
-        "id": 86,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Cientifico por equivocacion",
-        "objective": 10,
-        "desc": "Logra crecer 10 flores hibridas",
-      	"subprize": 101
-      },
-      {
-        "id": 87,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Nuevo descubrimiento, nuevos colores",
-        "objective": 50,
-        "desc": "Logra crecer 50 flores hibridas",
-      	"subprize": 101
-      },
-      {
-        "id": 88,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Nuevo descubrimiento, nuevos colores",
-        "objective": 50,
-        "desc": "Logra crecer 50 flores hibridas",
-      	"subprize": 101
-      },
-      {
-        "id": 89,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Maestro de la hibridacion",
-        "objective": 100,
-        "desc": "Logra crecer 100 flores hibridas",
-      	"subprize": 101
-      },
-      {
-        "id": 90,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Ugh, quien tira basura al lago?",
-        "objective": 10,
-        "desc": "Saca basura del agua usando ca«Ðas",
-      	"subprize": 101
-      },
-      {
-        "id": 91,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Bueno, porque no hay peces?",
-        "objective": 50,
-        "desc": "Saca basura del agua usando ca«Ðas",
-      	"subprize": 101
-      },
-      {
-        "id": 92,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Creo que hay un problema aqui",
-        "objective": 100,
-        "desc": "Saca basura del agua usando ca«Ðas",
-      	"subprize": 101
-      },
-      {
-        "id": 92,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Contaminacion masiva",
-        "objective": 300,
-        "desc": "Saca basura del agua usando ca«Ðas",
-      	"subprize": 101
-      },
-      {
-        "id": 93,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Pesca novata",
-        "objective": 10,
-        "desc": "Captura peces sin que se te escape ni una sola presa",
-      	"subprize": 101
-      },
-      {
-        "id": 93,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Pesca mejorada",
-        "objective": 70,
-        "desc": "Captura peces sin que se te escape ni una sola presa",
-      	"subprize": 101
-      },
-      {
-        "id": 94,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Pesca profesional",
-        "objective": 100,
-        "desc": "Captura peces sin que se te escape ni una sola presa",
-      	"subprize": 101
-      },
-      {
-        "id": 95,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mas espacio para decorar",
-        "objective": 1,
-        "desc": "Amplia tu casa",
-      	"subprize": 101
-      },
-      {
-        "id": 96,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mi isla, mis reglas",
-        "objective": 1,
-        "desc": "Amplia tu isla",
-      	"subprize": 101
-      },
-      {
-        "id": 97,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Buen vecino",
-        "objective": 5,
-        "desc": "Hazle favores a los aldeanos",
-      	"subprize": 101
-      },
-      {
-        "id": 98,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Un favor por otro",
-        "objective": 20,
-        "desc": "Hazle favores a los aldeanos",
-      	"subprize": 101
-      },
-      {
-        "id": 99,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Ayudante solidario",
-        "objective": 30,
-        "desc": "Hazle favores a los aldeanos",
-      	"subprize": 101
-      },
-      {
-        "id": 99,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "La convivencia hace al buen aldeano",
-        "objective": 100,
-        "desc": "Hazle favores a los aldeanos",
-      	"subprize": 101
-      },
-      {
-        "id": 100,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Nuevos movimientos",
-        "objective": 10,
-        "desc": "Aprende gestos",
-      	"subprize": 101
-      },
-      {
-        "id": 101,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Estos bailes si que no los conocia",
-        "objective": 20,
-        "desc": "Aprende gestos",
-      	"subprize": 101
-      },
-      {
-        "id": 102,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Hay algo que no sepa hacer?",
-        "objective": 50,
-        "desc": "Aprende gestos",
-      	"subprize": 101
-      },
-      {
-        "id": 103,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Selfie",
-        "objective": 1,
-        "desc": "Estrena tu camara realizando una foto",
-      	"subprize": 101
-      },
-      {
-        "id": 104,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Este no es mi estilo",
-        "objective": 1,
-        "desc": "Modifica el estilo de tu telefono",
-      	"subprize": 101
-      },
-      {
-        "id": 105,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Los mejores productos",
-        "objective": 50,
-        "desc": "Compra objetos a vendedores ambulantes",
-      	"subprize": 101
-      },
-      {
-        "id": 106,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Cada dia cosas nuevas",
-        "objective": 300,
-        "desc": "Compra objetos a vendedores ambulantes",
-      	"subprize": 101
-      },
-      {
-        "id": 107,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "El buen comprador de los ambulantes",
-        "objective": 1000,
-        "desc": "Compra objetos a vendedores ambulantes",
-      	"subprize": 101
-      },
-      {
-        "id": 108,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Vamos empezando",
-        "objective": 1,
-        "desc": "Haz una compra en tu isla por primera vez",
-      	"subprize": 101
-      },
-      {
-        "id": 109,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Emprendedor",
-        "objective": 1,
-        "desc": "Vende algo por primera vez",
-      	"subprize": 101
-      },
-      {
-        "id": 110,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Emprendedor primerizo",
-        "objective": 100,
-        "desc": "Vende 100 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 111,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mascota de negocios",
-        "objective": 1000,
-        "desc": "Vende 1000 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 112,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "As del negocio",
-        "objective": 10000,
-        "desc": "Vende 10000 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 113,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Un buen empresario",
-        "objective": 100000,
-        "desc": "Vende 100000 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 114,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Un buen empresario",
-        "objective": 100000,
-        "desc": "Vende 100000 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 115,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Inversion",
-        "objective": 200,
-        "desc": "Compra 200 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 116,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Dinero hay",
-        "objective": 2000,
-        "desc": "Compra 2000 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 117,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Comprador compulsivo",
-        "objective": 20000,
-        "desc": "Compra 20000 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 118,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mascota millonaria",
-        "objective": 200000,
-        "desc": "Compra 200000 objetos",
-      	"subprize": 101
-      },
-      {
-        "id": 119,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mascota derrochadora",
-        "objective": 50000,
-        "desc": "Gasta 50000 bells",
-      	"subprize": 101
-      },
-      {
-        "id": 120,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "No se que hacer con mi dinero",
-        "objective": 200000,
-        "desc": "Gasta 200000 bells",
-      	"subprize": 101
-      },
-      {
-        "id": 121,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Suficiente gasto",
-        "objective": 1000000,
-        "desc": "Gasta 1,000,000 bells",
-      	"subprize": 101
-      },
-      {
-        "id": 122,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Libre de deuda",
-        "objective": 1,
-        "desc": "Paga el prestamo de tu terreno",
-      	"subprize": 101
-      },
-      {
-        "id": 123,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Inversion de impresion",
-        "objective": 1,
-        "desc": "Compra judias magicas a Personaje el jueves al amanecer",
-      	"subprize": 101
-      },
-      {
-        "id": 124,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Inversion exitosa",
-        "objective": 1,
-        "desc": "Consigue monedas vendiendo judias magicas en la tienda",
-      	"subprize": 101
-      },
-      {
-        "id": 125,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Un regalo a mis amigos",
-        "objective": 20,
-        "desc": "Envia 20 regalos",
-      	"subprize": 101
-      },
-      {
-        "id": 126,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Mascota de regalos",
-        "objective": 80,
-        "desc": "Envia 80 regalos",
-      	"subprize": 101
-      },
-      {
-        "id": 127,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Un detalle no viene mal",
-        "objective": 200,
-        "desc": "Envia 200 regalos",
-      	"subprize": 101
-      },
-      {
-        "id": 128,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Adicto a enviar regalos",
-        "objective": 500,
-        "desc": "Envia 500 regalos",
-      	"subprize": 101
-      },
-      {
-        "id": 129,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Que es eso! Una pulga?",
-        "objective": 1,
-        "desc": "Quitale una pulga a un aldeano infestado",
-      	"subprize": 101
-      },
-      {
-        "id": 130,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Experto cazador de avispas",
-        "objective": 1,
-        "desc": "Captura 10 avispas seguidas sin que te pique ninguna",
-      	"subprize": 101
-      },
-      {
-        "id": 131,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Auch!",
-        "objective": 1,
-        "desc": "Deja que te pique un insecto",
-      	"subprize": 101
-      },
-      {
-        "id": 132,
-        "active": true,
-        "reward": 4,
-        "qtyReward": 5000,
-        "text": "Auch! Duele",
-        "objective": 1,
-        "desc": "Deja que te piquen las avispas hasta desmayarte",
-      	"subprize": 101
-      }
-    ]
+    {
+      "id": 6,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_explorador_de_peces",
+      "objective": 10,
+      "desc": "label_explorador_de_peces_desc",
+      "subprize": 101
+    },
+    {
+      "id": 7,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_explorador_de_peces2",
+      "objective": 20,
+      "desc": "label_explorador_de_peces2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 8,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_explorador_de_peces3",
+      "objective": 60,
+      "desc": "label_explorador_de_peces3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 9,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_explorador_de_peces4",
+      "objective": 120,
+      "desc": "label_explorador_de_peces4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 10,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_explorador_de_peces5",
+      "objective": 200,
+      "desc": "label_explorador_de_peces5_desc",
+      "subprize": 101
+
+    },
+    {
+      "id": 11,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_inicios_de_socializacion",
+      "objective": 10,
+      "desc": "label_inicios_de_socializacion_desc",
+      "subprize": 101
+    }
+  ,
+    {
+      "id": 12,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_inicios_de_socializacion2",
+      "objective": 50,
+      "desc": "label_inicios_de_socializacion_desc",
+      "subprize": 101
+    }    
+    ,
+    {
+      "id": 13,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_inicios_de_socializacion3",
+      "objective": 100,
+      "desc": "label_inicios_de_socializacion_desc",
+      "subprize": 101
+    }    	,
+    {
+      "id": 14,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_inicios_de_socializacion4",
+      "objective": 500,
+      "desc": "label_inicios_de_socializacion_desc",
+      "subprize": 101
+    }	,
+    {
+      "id": 15,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_caza_bichos",
+      "objective": 10,
+      "desc": "label_caza_bichos_desc",
+      "subprize": 101
+    }	,
+    {
+      "id": 16,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_caza_bichos2",
+      "objective": 100,
+      "desc": "label_caza_bichos2_desc",
+      "subprize": 101
+    }	,
+    {
+      "id": 17,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_caza_bichos3",
+      "objective": 500,
+      "desc": "label_caza_bichos3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 18,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_caza_bichos4",
+      "objective": 1000,
+      "desc": "label_caza_bichos4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 19,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_encuentros_diminutos",
+      "objective": 10,
+      "desc": "label_encuentros_diminutos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 20,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_encuentros_diminutos2",
+      "objective": 20,
+      "desc": "label_encuentros_diminutos2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 21,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_encuentros_diminutos3",
+      "objective": 60,
+      "desc": "label_encuentros_diminutos3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 22,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_encuentros_diminutos4",
+      "objective": 120,
+      "desc": "label_encuentros_diminutos4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 23,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_encuentros_diminutos5",
+      "objective": 200,
+      "desc": "label_encuentros_diminutos5_desc",
+      "subprize": 101
+    },
+    {
+      "id": 24,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_bricolaje",
+      "objective": 10,
+      "desc": "label_mision_bricolaje_desc",
+      "subprize": 101
+    },
+    {
+      "id": 25,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_bricolaje2",
+      "objective": 50,
+      "desc": "label_mision_bricolaje2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 26,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_bricolaje3",
+      "objective": 100,
+      "desc": "label_mision_bricolaje3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 27,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_bricolaje4",
+      "objective": 150,
+      "desc": "label_mision_bricolaje4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 28,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_bricolaje5",
+      "objective": 300,
+      "desc": "label_mision_bricolaje5_desc",
+      "subprize": 101
+    },
+    {
+      "id": 29,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_buceo",
+      "objective": 20,
+      "desc": "label_mision_buceo_desc",
+      "subprize": 101
+    },
+    {
+      "id": 30,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_buceo2",
+      "objective": 50,
+      "desc": "label_mision_buceo2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 31,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_buceo3",
+      "objective": 150,
+      "desc": "label_mision_buceo3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 32,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_buceo4",
+      "objective": 400,
+      "desc": "label_mision_buceo4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 33,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_herramientas",
+      "objective": 10,
+      "desc": "label_mision_herramientas_desc",
+      "subprize": 101
+    },
+    {
+      "id": 34,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_herramientas2",
+      "objective": 30,
+      "desc": "label_mision_herramientas2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 35,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_herramientas3",
+      "objective": 300,
+      "desc": "label_mision_herramientas3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 36,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_muebles",
+      "objective": 5,
+      "desc": "label_mision_muebles_desc",
+      "subprize": 101
+    },
+    {
+      "id": 37,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_muebles2",
+      "objective": 20,
+      "desc": "label_mision_muebles2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 38,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_muebles3",
+      "objective": 50,
+      "desc": "label_mision_muebles3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 39,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_muebles4",
+      "objective": 100,
+      "desc": "label_mision_muebles4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 40,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_personalizacion",
+      "objective": 10,
+      "desc": "label_mision_personalizacion_desc",
+      "subprize": 101
+    },
+    {
+      "id": 41,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_personalizacion2",
+      "objective": 40,
+      "desc": "label_mision_personalizacion2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 42,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_personalizacion3",
+      "objective": 50,
+      "desc": "label_mision_personalizacion3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 43,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_personalizacion4",
+      "objective": 100,
+      "desc": "label_mision_personalizacion4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 44,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_tala",
+      "objective": 300,
+      "desc": "label_mision_tala_desc",
+      "subprize": 101
+    },
+    {
+      "id": 45,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_tala2",
+      "objective": 1000,
+      "desc": "label_mision_tala2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 46,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_tala3",
+      "objective": 3000,
+      "desc": "label_mision_tala3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 47,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_tala4",
+      "objective": 10000,
+      "desc": "label_mision_tala4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 48,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_recetas",
+      "objective": 10,
+      "desc": "label_mision_recetas_desc",
+      "subprize": 101
+    },
+    {
+      "id": 49,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_recetas2",
+      "objective": 50,
+      "desc": "label_mision_recetas2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 50,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_recetas3",
+      "objective": 100,
+      "desc": "label_mision_recetas3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 51,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_recetas4",
+      "objective": 500,
+      "desc": "label_mision_recetas4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 52,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_preparar_comida",
+      "objective": 10,
+      "desc": "label_mision_preparar_comida_desc",
+      "subprize": 101
+    },
+    {
+      "id": 53,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_preparar_comida2",
+      "objective": 50,
+      "desc": "label_mision_preparar_comida2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 54,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_preparar_comida3",
+      "objective": 200,
+      "desc": "label_mision_preparar_comida3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 55,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_preparar_comida4",
+      "objective": 500,
+      "desc": "label_mision_preparar_comida4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 56,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_reventar_herramientas",
+      "objective": 20,
+      "desc": "label_mision_reventar_herramientas_desc",
+      "subprize": 101
+    },
+    {
+      "id": 57,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_reventar_herramientas2",
+      "objective": 50,
+      "desc": "label_mision_reventar_herramientas2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 58,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_reventar_herramientas3",
+      "objective": 100,
+      "desc": "label_mision_reventar_herramientas3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 59,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_reventar_herramientas4",
+      "objective": 200,
+      "desc": "label_mision_reventar_herramientas4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 60,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_fragmentos",
+      "objective": 20,
+      "desc": "label_mision_fragmentos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 61,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_fragmentos2",
+      "objective": 50,
+      "desc": "label_mision_fragmentos2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 62,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_fragmentos3",
+      "objective": 150,
+      "desc": "label_mision_fragmentos3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 63,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_fragmentos4",
+      "objective": 400,
+      "desc": "label_mision_fragmentos4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 64,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_aurelio",
+      "objective": 5,
+      "desc": "label_mision_aurelio_desc",
+      "subprize": 101
+    },
+    {
+      "id": 65,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_aurelio2",
+      "objective": 20,
+      "desc": "label_mision_aurelio2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 66,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_aurelio3",
+      "objective": 70,
+      "desc": "label_mision_aurelio3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 67,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_aurelio4",
+      "objective": 200,
+      "desc": "label_mision_aurelio4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 68,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_maleza",
+      "objective": 50,
+      "desc": "label_mision_maleza_desc",
+      "subprize": 101
+    },
+    {
+      "id": 69,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_maleza2",
+      "objective": 600,
+      "desc": "label_mision_maleza_desc",
+      "subprize": 101
+    },
+    {
+      "id": 70,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_maleza3",
+      "objective": 1500,
+      "desc": "label_mision_maleza_desc",
+      "subprize": 101
+    },
+    {
+      "id": 71,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_plantar_flores",
+      "objective": 20,
+      "desc": "label_mision_plantar_flores_desc",
+      "subprize": 101
+    },
+    {
+      "id": 72,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_plantar_flores2",
+      "objective": 50,
+      "desc": "label_mision_plantar_flores2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 73,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_plantar_flores3",
+      "objective": 150,
+      "desc": "label_mision_plantar_flores3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 74,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_plantar_flores4",
+      "objective": 200,
+      "desc": "label_mision_plantar_flores4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 75,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_regar",
+      "objective": 10,
+      "desc": "label_mision_regar_desc",
+      "subprize": 101
+    },
+    {
+      "id": 76,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_regar2",
+      "objective": 50,
+      "desc": "label_mision_regar2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 77,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_regar3",
+      "objective": 500,
+      "desc": "label_mision_regar3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 78,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_regar4",
+      "objective": 1000,
+      "desc": "label_mision_regar4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 79,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_plantar",
+      "objective": 30,
+      "desc": "label_mision_plantar_desc",
+      "subprize": 101
+    },
+    {
+      "id": 80,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_plantar2",
+      "objective": 100,
+      "desc": "label_mision_plantar2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 81,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_plantar3",
+      "objective": 300,
+      "desc": "label_mision_plantar3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 82,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_vende_frutas_cosecha",
+      "objective": 50,
+      "desc": "label_mision_vende_frutas_cosecha_desc",
+      "subprize": 101
+    },
+    {
+      "id": 83,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_vende_frutas_cosecha2",
+      "objective": 500,
+      "desc": "label_mision_vende_frutas_cosecha_desc",
+      "subprize": 101
+    },
+    {
+      "id": 84,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_vende_frutas_cosecha3",
+      "objective": 2000,
+      "desc": "label_mision_vende_frutas_cosecha_desc",
+      "subprize": 101
+    },
+    {
+      "id": 85,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_vende_frutas_cosecha4",
+      "objective": 10000,
+      "desc": "label_mision_vende_frutas_cosecha_desc",
+      "subprize": 101
+    },
+    {
+      "id": 86,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_hibridas",
+      "objective": 10,
+      "desc": "label_mision_hibridas_desc",
+      "subprize": 101
+    },
+    {
+      "id": 87,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_hibridas2",
+      "objective": 50,
+      "desc": "label_mision_hibridas2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 88,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_hibridas3",
+      "objective": 100,
+      "desc": "label_mision_hibridas3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 89,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_hibridas4",
+      "objective": 200,
+      "desc": "label_mision_hibridas4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 90,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_saca_basura",
+      "objective": 500,
+      "desc": "label_mision_saca_basura_desc",
+      "subprize": 101
+    },
+    {
+      "id": 91,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_saca_basura2",
+      "objective": 1000,
+      "desc": "label_mision_saca_basura_desc",
+      "subprize": 101
+    },
+    {
+      "id": 92,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_saca_basura3",
+      "objective": 5000,
+      "desc": "label_mision_saca_basura_desc",
+      "subprize": 101
+    },
+    {
+      "id": 133,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_saca_basura4",
+      "objective": 10000,
+      "desc": "label_mision_saca_basura_desc",
+      "subprize": 101
+    },
+    { 
+      "id": 134,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_pesca_peces_seguidos",
+      "objective": 10,
+      "desc": "label_pesca_peces_seguidos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 93,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_pesca_peces_seguidos2",
+      "objective": 70,
+      "desc": "label_pesca_peces_seguidos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 94,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_pesca_peces_seguidos3",
+      "objective": 100,
+      "desc": "label_pesca_peces_seguidos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 95,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_ampliar_casa",
+      "objective": 1,
+      "desc": "label_ampliar_casa_desc",
+      "subprize": 101
+    },
+    {
+      "id": 96,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_ampliar_isla",
+      "objective": 1,
+      "desc": "label_ampliar_isla_desc",
+      "subprize": 101
+    },
+    {
+      "id": 97,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_favores_vecinos",
+      "objective": 5,
+      "desc": "label_favores_vecinos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 98,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_favores_vecinos2",
+      "objective": 20,
+      "desc": "label_favores_vecinos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 99,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_favores_vecinos3",
+      "objective": 30,
+      "desc": "label_favores_vecinos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 135,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_favores_vecinos4",
+      "objective": 100,
+      "desc": "label_favores_vecinos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 100,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_aprende_gestos",
+      "objective": 10,
+      "desc": "label_aprende_gestos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 101,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_aprende_gestos2",
+      "objective": 20,
+      "desc": "label_aprende_gestos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 102,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_aprende_gestos3",
+      "objective": 50,
+      "desc": "label_aprende_gestos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 103,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_aprende_camara",
+      "objective": 1,
+      "desc": "label_aprende_camara_desc",
+      "subprize": 101
+    },
+    {
+      "id": 104,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_estilo_celular",
+      "objective": 1,
+      "desc": "label_estilo_celular_desc",
+      "subprize": 101
+    },
+    {
+      "id": 105,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_compra_ambulantes",
+      "objective": 50,
+      "desc": "label_mision_compra_ambulantes_desc",
+      "subprize": 101
+    },
+    {
+      "id": 106,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_compra_ambulantes2",
+      "objective": 300,
+      "desc": "label_mision_compra_ambulantes_desc",
+      "subprize": 101
+    },
+    {
+      "id": 107,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_compra_ambulantes3",
+      "objective": 1000,
+      "desc": "label_mision_compra_ambulantes_desc",
+      "subprize": 101
+    },
+    {
+      "id": 108,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_primera_compra",
+      "objective": 1,
+      "desc": "label_mision_primera_compra_desc",
+      "subprize": 101
+    },
+    {
+      "id": 109,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_vender",
+      "objective": 1,
+      "desc": "label_mision_vender_desc",
+      "subprize": 101
+    },
+    {
+      "id": 110,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_vender2",
+      "objective": 100,
+      "desc": "label_mision_vender2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 111,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_vender3",
+      "objective": 1000,
+      "desc": "label_mision_vender3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 112,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_vender4",
+      "objective": 10000,
+      "desc": "label_mision_vender4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 113,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_vender5",
+      "objective": 100000,
+      "desc": "label_mision_vender5_desc",
+      "subprize": 101
+    },
+    {
+      "id": 114,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_vender6",
+      "objective": 1000000,
+      "desc": "label_mision_vender6_desc",
+      "subprize": 101
+    },
+    {
+      "id": 115,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_comprar",
+      "objective": 200,
+      "desc": "label_mision_comprar_desc",
+      "subprize": 101
+    },
+    {
+      "id": 116,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_comprar2",
+      "objective": 2000,
+      "desc": "label_mision_comprar2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 117,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_comprar3",
+      "objective": 20000,
+      "desc": "label_mision_comprar3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 118,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_comprar4",
+      "objective": 200000,
+      "desc": "label_mision_comprar4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 119,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_gastar",
+      "objective": 50000,
+      "desc": "label_mision_gastar_desc",
+      "subprize": 101
+    },
+    {
+      "id": 120,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_gastar2",
+      "objective": 200000,
+      "desc": "label_mision_gastar2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 121,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_gastar3",
+      "objective": 1000000,
+      "desc": "label_mision_gastar3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 122,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_deuda",
+      "objective": 1,
+      "desc": "label_mision_deuda_desc",
+      "subprize": 101
+    },
+    {
+      "id": 123,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_judias",
+      "objective": 1,
+      "desc": "label_mision_judias_desc",
+      "subprize": 101
+    },
+    {
+      "id": 124,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_judias_vender",
+      "objective": 1,
+      "desc": "label_mision_judias_vender_desc",
+      "subprize": 101
+    },
+    {
+      "id": 125,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_enviar_regalos",
+      "objective": 20,
+      "desc": "label_mision_enviar_regalos_desc",
+      "subprize": 101
+    },
+    {
+      "id": 126,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_enviar_regalos2",
+      "objective": 80,
+      "desc": "label_mision_enviar_regalos2_desc",
+      "subprize": 101
+    },
+    {
+      "id": 127,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_enviar_regalos3",
+      "objective": 200,
+      "desc": "label_mision_enviar_regalos3_desc",
+      "subprize": 101
+    },
+    {
+      "id": 128,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_enviar_regalos4",
+      "objective": 500,
+      "desc": "label_mision_enviar_regalos4_desc",
+      "subprize": 101
+    },
+    {
+      "id": 129,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_pulga",
+      "objective": 1,
+      "desc": "label_mision_pulga_desc",
+      "subprize": 101
+    },
+    {
+      "id": 130,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_avispa",
+      "objective": 1,
+      "desc": "label_mision_avispa_desc",
+      "subprize": 101
+    },
+    {
+      "id": 131,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_picadura",
+      "objective": 1,
+      "desc": "label_mision_picadura_desc",
+      "subprize": 101
+    },
+    {
+      "id": 132,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 5000,
+      "text": "label_mision_picadura2",
+      "objective": 1,
+      "desc": "label_mision_picadura2_desc",
+      "subprize": 101
+    }
+  ]
 }
