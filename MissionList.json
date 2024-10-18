@@ -1,7 +1,188 @@
 {
 
   "Missions": [
+  
     {
+      "id": 136,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_encuentra_tesoros",
+      "objective": 30,
+      "desc": "label_encuentra_tesoros_desc",
+      "subprize": 101
+      },
+      {
+      "id": 137,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_encuentra_tesoros2",
+      "objective": 100,
+      "desc": "label_encuentra_tesoros_desc",
+      "subprize": 101
+      },
+    {
+      "id": 138,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_encuentra_tesoros3",
+      "objective": 100,
+      "desc": "label_encuentra_tesoros_desc",
+      "subprize": 101
+      },
+    {
+      "id": 139,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_compra_toys",
+      "objective": 40,
+      "desc": "label_compra_toys_desc",
+      "subprize": 101
+      },
+    {
+      "id": 140,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_compra_toys2",
+      "objective": 100,
+      "desc": "label_compra_toys2_desc",
+      "subprize": 101
+      },
+      {
+      "id": 141,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_compra_toys3",
+      "objective": 500,
+      "desc": "label_compra_toys3_desc",
+      "subprize": 101
+      },
+    {
+      "id": 142,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_compra_comida",
+      "objective": 40,
+      "desc": "label_compra_comida_desc",
+      "subprize": 101
+      },
+    {
+      "id": 143,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_compra_comida2",
+      "objective": 100,
+      "desc": "label_compra_comida2_desc",
+      "subprize": 101
+      },
+    {
+      "id": 144,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_compra_comida3",
+      "objective": 600,
+      "desc": "label_compra_comida3_desc",
+      "subprize": 101
+      },
+    {
+      "id": 145,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_compra_prendas",
+      "objective": 10,
+      "desc": "label_compra_prendas_desc",
+      "subprize": 101
+      },
+    {
+      "id": 146,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_compra_prendas2",
+      "objective": 50,
+      "desc": "label_compra_prendas2_desc",
+      "subprize": 101
+      },
+    {
+      "id": 147,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_compra_prendas3",
+      "objective": 200,
+      "desc": "label_compra_prendas3_desc",
+      "subprize": 101
+      },
+    {
+      "id": 148,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_visita_ciudad",
+      "objective": 1,
+      "desc": "label_visita_ciudad_desc",
+      "subprize": 101
+      },
+    {
+      "id": 149,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_personalizar_mascota",
+      "objective": 1,
+      "desc": "label_personalizar_mascota_desc",
+      "subprize": 101
+      },
+    {
+      "id": 150,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_comprar_magic",
+      "objective": 30,
+      "desc": "label_comprar_magic_desc",
+      "subprize": 101
+      },
+      {
+      "id": 151,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_comprar_magic2",
+      "objective": 70,
+      "desc": "label_comprar_magic2_desc",
+      "subprize": 101
+      },
+      {
+      "id": 152,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_comprar_magic3",
+      "objective": 150,
+      "desc": "label_comprar_magic3_desc",
+      "subprize": 101
+      },
+      {
+      "id": 153,
+      "active": true,
+      "reward": 4,
+      "qtyReward": 101,
+      "text": "label_pide_consejos",
+      "objective": 1,
+      "desc": "label_pide_consejos_desc",
+      "subprize": 101
+      },
+      {
       "id": 1,
       "active": true,
       "reward": 4,
